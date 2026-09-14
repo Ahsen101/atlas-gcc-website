@@ -90,11 +90,11 @@ function Navbar() {
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 group">
           <div className="relative h-10 w-10 overflow-hidden rounded-lg transition-transform group-hover:scale-110 group-hover:rotate-3">
-            <Image src="/images/logo-icon.png" alt="Atlas GCC" width={40} height={40} className="object-contain" />
+            <Image src="/images/logo-icon.png" alt="Atlas GES" width={40} height={40} className="object-contain" />
           </div>
           <div>
             <span className="text-lg font-bold tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>ATLAS</span>
-            <span className="text-xs text-atlas-400 ml-1 font-medium">GCC</span>
+            <span className="text-xs text-atlas-400 ml-1 font-medium">GES</span>
           </div>
         </a>
 
@@ -238,9 +238,6 @@ export default function Home() {
         />
 
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-          <div className="animate-fade-in flex justify-center mb-8">
-            <Image src="/images/logo-icon.png" alt="Atlas GCC" width={80} height={80} className="drop-shadow-2xl" />
-          </div>
           <div className="animate-fade-in">
             <span className="inline-flex items-center gap-2 rounded-full border border-atlas-500/30 bg-atlas-500/5 px-4 py-1.5 text-xs font-semibold text-atlas-400 uppercase tracking-widest mb-8">
               <span className="h-1.5 w-1.5 rounded-full bg-atlas-400 animate-pulse-slow" />
@@ -613,9 +610,9 @@ export default function Home() {
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="flex items-center gap-3">
               <div className="relative h-8 w-8 overflow-hidden rounded-lg">
-                <Image src="/images/logo-icon.png" alt="Atlas GCC" width={32} height={32} className="object-contain" />
+                <Image src="/images/logo-icon.png" alt="Atlas GES" width={32} height={32} className="object-contain" />
               </div>
-              <span className="font-bold" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>ATLAS <span className="text-atlas-400">GCC</span></span>
+              <span className="font-bold" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>ATLAS <span className="text-atlas-400">GES</span></span>
             </div>
             <p className="text-xs text-gray-500">
               &copy; {new Date().getFullYear()} Atlas Earth Exploration. All rights reserved.
