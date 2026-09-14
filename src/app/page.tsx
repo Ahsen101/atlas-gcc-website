@@ -166,12 +166,12 @@ function ServiceCard({ image, title, items, delay, slug }: { image: string; titl
 // ============================================================
 // Project Card with Image
 // ============================================================
-function ProjectCard({ name, status, idx, image }: { name: string; status: string; idx: number; image?: string }) {
+function ProjectCard({ name, status, idx, image, slug }: { name: string; status: string; idx: number; image?: string; slug: string }) {
   return (
-    <div className="reveal flex items-center gap-4 rounded-xl border border-white/5 bg-white/[0.02] p-4 hover:border-atlas-500/30 hover:bg-white/[0.04] transition-all duration-300 group" style={{ transitionDelay: `${idx * 80}ms` }}>
+    <a href={`/projects/${slug}`} className="reveal flex items-center gap-4 rounded-xl border border-white/5 bg-white/[0.02] p-4 hover:border-atlas-500/30 hover:bg-white/[0.04] transition-all duration-300 group block cursor-pointer" style={{ transitionDelay: `${idx * 80}ms` }}>
       {image ? (
         <div className="relative h-16 w-16 shrink-0 rounded-lg overflow-hidden">
-          <img src={image} alt={name} className="h-full w-full object-cover" />
+          <img src={image} alt={name} className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" />
         </div>
       ) : (
         <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg bg-atlas-600/10 text-sm font-bold text-atlas-400 group-hover:bg-atlas-600/20 transition-colors">
@@ -179,12 +179,15 @@ function ProjectCard({ name, status, idx, image }: { name: string; status: strin
         </span>
       )}
       <div className="min-w-0 flex-1">
-        <p className="text-sm font-medium text-gray-200 leading-snug">{name}</p>
+        <p className="text-sm font-medium text-gray-200 leading-snug group-hover:text-white transition-colors">{name}</p>
       </div>
-      <span className={`shrink-0 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider ${status === 'Approved' ? 'bg-emerald-500/10 text-emerald-400' : 'bg-atlas-500/10 text-atlas-400'}`}>
-        {status}
-      </span>
-    </div>
+      <div className="flex items-center gap-2 shrink-0">
+        <span className={`rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider ${status === 'Approved' ? 'bg-emerald-500/10 text-emerald-400' : 'bg-atlas-500/10 text-atlas-400'}`}>
+          {status}
+        </span>
+        <svg className="h-4 w-4 text-gray-600 group-hover:text-atlas-400 group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
+      </div>
+    </a>
   );
 }
 
@@ -428,14 +431,14 @@ export default function Home() {
 
           <div className="mt-16 grid gap-4 md:grid-cols-2">
             {[
-              { name: 'Automatic Cargo Integrated Screening (ACIS), King Fahad International Airport — Dammam', status: 'Approved', image: '/images/project-1.jpeg' },
-              { name: 'National Integrated Project for NEOM Bay Airport Security & Protection', status: 'Approved', image: '/images/project-2.jpeg' },
-              { name: 'Automatic Cargo Integrated Screening (ACIS), King Khalid International Airport — Riyadh', status: 'Approved', image: '/images/project-3.jpeg' },
-              { name: 'New Airport Al Jouf', status: 'Approved', image: '/images/project-4.jpeg' },
-              { name: 'Extension of Naqel Facility, King Fahad International Airport — Dammam', status: 'Approved' },
-              { name: 'NEOM Bay Airport — Geotechnical & Geophysical Investigation', status: 'Approved' },
+              { name: 'Automatic Cargo Integrated Screening (ACIS), King Fahad International Airport — Dammam', status: 'Approved', image: '/images/project-1.jpeg', slug: 'acis-dammam' },
+              { name: 'National Integrated Project for NEOM Bay Airport Security & Protection', status: 'Approved', image: '/images/project-2.jpeg', slug: 'neom-bay-security' },
+              { name: 'Automatic Cargo Integrated Screening (ACIS), King Khalid International Airport — Riyadh', status: 'Approved', image: '/images/project-3.jpeg', slug: 'acis-riyadh' },
+              { name: 'New Airport Al Jouf', status: 'Approved', image: '/images/project-4.jpeg', slug: 'new-airport-al-jouf' },
+              { name: 'Extension of Naqel Facility, King Fahad International Airport — Dammam', status: 'Approved', slug: 'naqel-facility-dammam' },
+              { name: 'NEOM Bay Airport — Geotechnical & Geophysical Investigation', status: 'Approved', slug: 'neom-bay-geotechnical' },
             ].map((p, i) => (
-              <ProjectCard key={i} name={p.name} status={p.status} idx={i} image={p.image} />
+              <ProjectCard key={i} name={p.name} status={p.status} idx={i} image={p.image} slug={p.slug} />
             ))}
           </div>
 
