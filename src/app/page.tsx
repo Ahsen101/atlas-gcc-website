@@ -607,7 +607,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-semibold text-sm">{t('contact.email')}</p>
-                      <p className="text-sm text-gray-400 mt-1" dir="ltr">pm.khan@atlasgccsurvey.com</p>
+                      <p className="text-sm text-gray-400 mt-1" dir="ltr">info@atlasges.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
