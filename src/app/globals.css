@@ -114,4 +114,19 @@
   }
 
   .hero-kenburns { animation: none !important; transform: none !important; }
+  .marquee-track { animation: none !important; }
+}
+
+/* Infinite marquee scroll */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
 }

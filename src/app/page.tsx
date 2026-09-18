@@ -475,26 +475,30 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Client logos */}
+          {/* Client logos — infinite marquee */}
           <div className="reveal mt-20 text-center">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-10">{t('projects.trustedBy')}</p>
-            <div className="stagger grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center">
-              {[
-                { src: '/images/partner-aramco.png', alt: 'Saudi Aramco' },
-                { src: '/images/partner-redsea.png', alt: 'Red Sea Global' },
-                { src: '/images/partner-worley.png', alt: 'Worley' },
-                { src: '/images/partner-maaden.png', alt: "Ma'aden" },
-                { src: '/images/partner-khatib-alami.png', alt: 'Khatib & Alami' },
-                { src: '/images/partner-marafiq.png', alt: 'Marafiq' },
-                { src: '/images/partner-rcjy.png', alt: 'Royal Commission Jubail & Yanbu' },
-                { src: '/images/partner-sec.jpeg', alt: 'Saudi Electricity Company' },
-                { src: '/images/partner-nwc.jpeg', alt: 'National Water Company' },
-                { src: '/images/partner-swcc.jpeg', alt: 'Saline Water Conversion Corp' },
-              ].map((logo) => (
-                <div key={logo.alt} className="reveal-up flex items-center justify-center h-16 px-4 opacity-70 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
-                  <img src={logo.src} alt={logo.alt} className="max-h-14 max-w-[160px] object-contain brightness-200 contrast-50 hover:brightness-100 hover:contrast-100 transition-all duration-300" />
-                </div>
-              ))}
+            <div className="marquee-container overflow-hidden">
+              <div className="marquee-track flex items-center gap-16 w-max">
+                {[...Array(2)].map((_, setIdx) =>
+                  [
+                    { src: '/images/partner-aramco.png', alt: 'Saudi Aramco' },
+                    { src: '/images/partner-redsea.png', alt: 'Red Sea Global' },
+                    { src: '/images/partner-worley.png', alt: 'Worley' },
+                    { src: '/images/partner-maaden.png', alt: "Ma'aden" },
+                    { src: '/images/partner-khatib-alami.png', alt: 'Khatib & Alami' },
+                    { src: '/images/partner-marafiq.png', alt: 'Marafiq' },
+                    { src: '/images/partner-rcjy.png', alt: 'Royal Commission Jubail & Yanbu' },
+                    { src: '/images/partner-sec.jpeg', alt: 'Saudi Electricity Company' },
+                    { src: '/images/partner-nwc.jpeg', alt: 'National Water Company' },
+                    { src: '/images/partner-swcc.jpeg', alt: 'Saline Water Conversion Corp' },
+                  ].map((logo) => (
+                    <div key={`${setIdx}-${logo.alt}`} className="flex-shrink-0 flex items-center justify-center h-16 px-4">
+                      <img src={logo.src} alt={logo.alt} className="max-h-14 max-w-[160px] object-contain" />
+                    </div>
+                  ))
+                )}
+              </div>
             </div>
           </div>
         </div>
