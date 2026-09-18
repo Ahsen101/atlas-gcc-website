@@ -139,7 +139,7 @@ export default function ServicePage({ title, titleAr, subtitle, subtitleAr, hero
               <span className="font-bold" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>ATLAS <span className="text-atlas-400">GES</span></span>
             </div>
             <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} {t('footer.copyright')}</p>
-            <a href="https://www.atlasgccsurvey.com" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-atlas-400 transition-colors">www.atlasgccsurvey.com</a>
+            <a href="https://www.atlasges.com" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-atlas-400 transition-colors">www.atlasges.com</a>
           </div>
         </div>
       </footer>

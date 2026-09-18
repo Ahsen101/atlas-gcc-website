@@ -19,23 +19,51 @@
   }
 }
 
-/* Scroll-triggered animation classes */
-.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+/* ============================================================
+   Scroll-triggered animation classes
+   Uses only transform + opacity (GPU-accelerated, no layout thrash).
+   A one-time `.visible` class is added by the Intersection Observer.
+   ============================================================ */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
-.reveal-left { opacity: 0; transform: translateX(-40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+.reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
 .reveal-left.visible { opacity: 1; transform: translateX(0); }
-.reveal-right { opacity: 0; transform: translateX(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+.reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
 .reveal-right.visible { opacity: 1; transform: translateX(0); }
-.reveal-scale { opacity: 0; transform: scale(0.92); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+.reveal-scale { opacity: 0; transform: scale(0.92); transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
 .reveal-scale.visible { opacity: 1; transform: scale(1); }
 
-/* Stagger children */
+/* Transform-only reveal for elements whose opacity is managed elsewhere
+   (e.g. partner logos that use an opacity-based grayscale hover state). */
+.reveal-up { transform: translateY(24px); transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform; }
+.reveal-up.visible { transform: translateY(0); }
+
+/* Pop-in: slightly springy scale used for value cards */
+.reveal-pop { opacity: 0; transform: scale(0.8) translateY(20px); transition: opacity 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); will-change: opacity, transform; }
+.reveal-pop.visible { opacity: 1; transform: scale(1) translateY(0); }
+
+/* Release will-change after the animation completes to free the compositor */
+.reveal.visible, .reveal-left.visible, .reveal-right.visible,
+.reveal-scale.visible, .reveal-pop.visible, .reveal-up.visible { will-change: auto; }
+
+/* Stagger children (extended to cover the 10-logo partner grid) */
 .stagger > *:nth-child(1) { transition-delay: 0ms; }
-.stagger > *:nth-child(2) { transition-delay: 100ms; }
-.stagger > *:nth-child(3) { transition-delay: 200ms; }
-.stagger > *:nth-child(4) { transition-delay: 300ms; }
-.stagger > *:nth-child(5) { transition-delay: 400ms; }
-.stagger > *:nth-child(6) { transition-delay: 500ms; }
+.stagger > *:nth-child(2) { transition-delay: 80ms; }
+.stagger > *:nth-child(3) { transition-delay: 160ms; }
+.stagger > *:nth-child(4) { transition-delay: 240ms; }
+.stagger > *:nth-child(5) { transition-delay: 320ms; }
+.stagger > *:nth-child(6) { transition-delay: 400ms; }
+.stagger > *:nth-child(7) { transition-delay: 480ms; }
+.stagger > *:nth-child(8) { transition-delay: 560ms; }
+.stagger > *:nth-child(9) { transition-delay: 640ms; }
+.stagger > *:nth-child(10) { transition-delay: 720ms; }
+
+/* Hero background: slow ken-burns zoom for a premium, alive feel */
+.hero-kenburns { animation: kenburns 22s ease-in-out infinite alternate; will-change: transform; }
+@keyframes kenburns {
+  0%   { transform: scale(1) translate3d(0, 0, 0); }
+  100% { transform: scale(1.12) translate3d(0, -1.5%, 0); }
+}
 
 /* Counter animation */
 @property --num {
@@ -63,4 +91,27 @@
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+}
+
+/* ============================================================
+   Accessibility: respect the user's reduced-motion preference.
+   Content is shown in its final state with no animation.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Force revealed content visible immediately, no transform offset */
+  .reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-pop, .reveal-up {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-kenburns { animation: none !important; transform: none !important; }
 }
