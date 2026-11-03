@@ -1,4 +1,8 @@
+import type { Metadata } from 'next';
+import { canonicalMeta } from '@/content/services';
 import ProjectPage from '../ProjectPage';
+
+export const metadata: Metadata = canonicalMeta('/projects/new-airport-al-jouf/');
 
 export default function NewAirportAlJoufPage() {
   return (

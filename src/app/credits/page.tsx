@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { readCredits } from '@/content/attributions';
-import { SERVICES, SITE_URL } from '@/content/services';
+import { SERVICES, canonicalMeta } from '@/content/services';
 import CreditsView from './CreditsView';
 
 export const metadata: Metadata = {
   title: 'Photo credits | ATLAS GES',
   description: 'Authors, licences and sources of the photos used on the ATLAS GES service detail pages.',
-  alternates: { canonical: `${SITE_URL}/credits/` },
+  ...canonicalMeta('/credits/'),
 };
 
 export default function CreditsPage() {

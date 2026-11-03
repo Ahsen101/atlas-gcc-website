@@ -45,3 +45,9 @@ export function photoCredit(item: DetailItem): string | null {
 }
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://atlasges.com').replace(/\/$/, '');
+
+/** Canonical + og:url for a page path (e.g. '/' or '/services/surveys/'), same pattern as the detail pages. */
+export function canonicalMeta(path: string) {
+  const url = `${SITE_URL}${path}`;
+  return { alternates: { canonical: url }, openGraph: { url } };
+}
