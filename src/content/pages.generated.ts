@@ -2,12 +2,16 @@
 import type { DetailCard } from './types';
 import c_surveys from './surveys.json';
 import c_geotechnical from './geotechnical.json';
+import c_geophysical from './geophysical.json';
+import c_geological_mapping from './geological-mapping.json';
 import c_environmental from './environmental.json';
 import c_health_safety from './health-safety.json';
 
 export const DETAIL_CONTENT: Record<string, DetailCard[]> = {
   'surveys': c_surveys as DetailCard[],
   'geotechnical': c_geotechnical as DetailCard[],
+  'geophysical': c_geophysical as DetailCard[],
+  'geological-mapping': c_geological_mapping as DetailCard[],
   'environmental': c_environmental as DetailCard[],
   'health-safety': c_health_safety as DetailCard[],
 };

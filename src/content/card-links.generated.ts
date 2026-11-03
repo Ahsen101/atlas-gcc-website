@@ -10,6 +10,16 @@ export const CARD_LINKS: Record<string, Record<string, string>> = {
     "In-Situ Testing": "in-situ-testing",
     "Foundation Engineering": "foundation-engineering"
   },
+  "geophysical": {
+    "Geophysical Investigations": "geophysical-investigations",
+    "Marine Geophysical Surveys": "marine-geophysical-surveys",
+    "Borehole Geophysics": "borehole-geophysics"
+  },
+  "geological-mapping": {
+    "Mapping & Modelling": "mapping-modelling",
+    "Exploration & Resources": "exploration-resources",
+    "Project Applications": "project-applications"
+  },
   "environmental": {
     "Assessment Services": "assessment-services",
     "Monitoring & Analysis": "monitoring-analysis",

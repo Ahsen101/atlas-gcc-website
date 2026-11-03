@@ -83,8 +83,14 @@ def main():
         for card in cards:
             for item in card["items"]:
                 pf = item.get("photo_file")
-                src_img = os.path.join(SRC, page, "images", pf) if pf else None
-                if pf and os.path.exists(src_img):
+                # photo_file may be "name.jpg" (inside images/) or "images/name.jpg" (relative to the page dir).
+                src_img = None
+                if pf:
+                    for cand in (os.path.join(SRC, page, pf), os.path.join(SRC, page, "images", os.path.basename(pf))):
+                        if os.path.exists(cand):
+                            src_img = cand
+                            break
+                if src_img:
                     os.makedirs(img_out, exist_ok=True)
                     base = os.path.splitext(os.path.basename(pf))[0] + ".jpg"
                     (w, h), size = optimise(src_img, os.path.join(img_out, base))

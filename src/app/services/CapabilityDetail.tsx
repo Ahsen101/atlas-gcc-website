@@ -140,7 +140,7 @@ export default function CapabilityDetail({ service, card, siblings }: Props) {
                             height={item.photo_height}
                             loading={i === 0 ? 'eager' : 'lazy'}
                             decoding="async"
-                            className="w-full h-auto object-cover"
+                            className="w-full h-auto max-h-[560px] object-cover"
                           />
                         </div>
                         {(item.attribution || item.photo_author) && (

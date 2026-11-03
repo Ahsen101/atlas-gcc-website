@@ -55,14 +55,13 @@
         "slug": "environmental-site-assessment-esa",
         "desc_en": "An Environmental Site Assessment determines whether a property is, or may be, contaminated. A Phase I ESA is non-intrusive: it reviews historical records, aerial photographs and regulatory databases, includes a site walkover and interviews, and identifies potential sources of contamination. If concerns are found, a Phase II ESA follows, collecting soil, soil-gas and groundwater samples using hand augers, direct-push rigs or drilled boreholes, with laboratory analysis for hydrocarbons, metals and other chemicals. Widely used practices include ASTM E1527 and E1903. ESAs are commonly required before land purchase, financing, redevelopment or lease handover, and they define the need for any further investigation.",
         "desc_ar": "التقييم البيئي للموقع يحدّد ما إذا كان العقار ملوثاً أو يُحتمل أن يكون كذلك. المرحلة الأولى من التقييم غير تدخلية: تراجع السجلات التاريخية والصور الجوية وقواعد البيانات التنظيمية، وتشمل جولة ميدانية في الموقع ومقابلات، وتحدد المصادر المحتملة للتلوث. وإذا ظهرت مخاوف، تليها المرحلة الثانية التي تُجمع فيها عينات من التربة وغازات التربة والمياه الجوفية باستخدام المثاقب اليدوية أو أجهزة الدفع المباشر أو الآبار المحفورة، مع تحليل مخبري للهيدروكربونات والمعادن وغيرها من المواد الكيميائية. ومن الممارسات الشائعة المعياران ASTM E1527 وASTM E1903. وتُطلب هذه التقييمات عادةً قبل شراء الأرض أو تمويلها أو إعادة تطويرها أو تسليمها عند انتهاء الإيجار، وهي تحدد الحاجة إلى أي تحقيق إضافي.",
-        "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons description confirms the photo shows soil sampling with a Geoprobe direct-push rig (the standard Phase II ESA method). Not viewed visually and not downloaded: this agent has no shell/download tool.",
+        "photo_file": "environmental-site-assessment-esa.jpg",
         "photo_source_url": "https://commons.wikimedia.org/wiki/File:2012_USACE_Geotechnical_Conference_(7804056386).jpg",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/2012_USACE_Geotechnical_Conference_%287804056386%29.jpg",
         "photo_author": "U.S. Army Corps of Engineers Savannah District",
-        "photo_licence": "Public domain (U.S. federal government work)",
-        "attribution": "Not required. Courtesy credit: U.S. Army Corps of Engineers Savannah District, public domain, via Wikimedia Commons."
+        "photo_licence": "Public domain",
+        "attribution": "Photo: U.S. Army Corps of Engineers Savannah District, Public domain, via Wikimedia Commons (marking blurred)",
+        "photo_width": 638,
+        "photo_height": 959
       },
       {
         "name": "Environmental Auditing & Permitting",
@@ -85,14 +84,13 @@
         "slug": "environmental-emergency-response-planning",
         "desc_en": "Environmental emergency response planning prepares a site to act quickly if an oil spill, chemical release, fire run-off or similar incident threatens the environment. The plan identifies credible spill scenarios, sensitive receptors such as coastlines, wetlands and water intakes, and the resources needed to contain and recover the release, including booms, skimmers, sorbents and spill kits. It sets out roles, notification routes to authorities, and step-by-step response procedures. Plans are tested through drills and exercises and updated afterwards. Such plans are often a permit condition for ports, marine works, fuel depots and industrial facilities.",
         "desc_ar": "التخطيط للاستجابة للطوارئ البيئية يُعِدّ الموقع للتحرك بسرعة إذا هدّد تسرّب نفطي أو انبعاث كيميائي أو جريان مياه إطفاء الحرائق أو حادث مشابه البيئة. تحدد الخطة سيناريوهات التسرب المحتملة، والمستقبِلات الحساسة مثل السواحل والأراضي الرطبة ومآخذ المياه، والموارد اللازمة لاحتواء التسرب واستعادته، بما فيها الحواجز العائمة وأجهزة الكشط والمواد الماصة وحقائب مكافحة التسرب. وتحدد الأدوار ومسارات إبلاغ السلطات وإجراءات الاستجابة خطوة بخطوة. وتُختبر الخطط من خلال التدريبات والتمارين وتُحدَّث بعدها. وكثيراً ما تكون هذه الخطط شرطاً من شروط الترخيص للموانئ والأعمال البحرية ومستودعات الوقود والمنشآت الصناعية.",
-        "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons description: oil spill emergency response exercise deploying booms and a skimmer. Not viewed visually and not downloaded: this agent has no shell/download tool.",
+        "photo_file": "environmental-emergency-response-planning.jpg",
         "photo_source_url": "https://commons.wikimedia.org/wiki/File:Emergency_Response_Exercise_(37219716002).jpg",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Emergency_Response_Exercise_%2837219716002%29.jpg",
         "photo_author": "U.S. Fish and Wildlife Service - Midwest Region",
-        "photo_licence": "Public domain (U.S. federal government work)",
-        "attribution": "Not required. Courtesy credit: U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons."
+        "photo_licence": "Public domain",
+        "attribution": "Photo: U.S. Fish and Wildlife Service - Midwest Region, Public domain, via Wikimedia Commons",
+        "photo_width": 959,
+        "photo_height": 638
       }
     ]
   },
@@ -122,14 +120,13 @@
         "slug": "water-wastewater-services",
         "desc_en": "Water and wastewater services cover the testing, assessment and management of water supplies and the effluents a project produces. Work includes sampling surface water, seawater, potable water and process effluent, and analysing parameters such as pH, dissolved oxygen, biochemical and chemical oxygen demand, suspended solids, nutrients, oil and grease, heavy metals and bacteria. Consultants characterise wastewater streams, assess treatment options such as activated sludge, membrane or package plants, and review outfall and discharge arrangements against permit limits. These services support discharge permits, treatment plant design and upgrades, water reuse schemes, and the protection of receiving waters near the site.",
         "desc_ar": "تشمل خدمات المياه ومياه الصرف فحص مصادر المياه والمياه المصرّفة الناتجة عن المشروع وتقييمها وإدارتها. ويتضمن العمل أخذ عينات من المياه السطحية ومياه البحر ومياه الشرب ومياه الصرف الصناعي، وتحليل مؤشرات مثل الرقم الهيدروجيني والأكسجين المذاب والطلب الحيوي والكيميائي على الأكسجين والمواد الصلبة العالقة والمغذيات والزيوت والشحوم والمعادن الثقيلة والبكتيريا. ويقوم الاستشاريون بتوصيف تيارات مياه الصرف، وتقييم خيارات المعالجة مثل الحمأة المنشطة أو الأغشية أو المحطات المدمجة، ومراجعة ترتيبات المصبات والتصريف مقارنة بحدود التراخيص. وتدعم هذه الخدمات تصاريح التصريف، وتصميم محطات المعالجة وتطويرها، ومشاريع إعادة استخدام المياه، وحماية المسطحات المائية المستقبِلة القريبة من الموقع.",
-        "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons description: aeration basins of the activated-sludge system at the Gresham Wastewater Treatment Plant. Not viewed visually and not downloaded: this agent has no shell/download tool.",
+        "photo_file": "water-wastewater-services.jpg",
         "photo_source_url": "https://commons.wikimedia.org/wiki/File:Gresham_Wastewater_Treatment_Plant_aeration_basins_2025.jpg",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Gresham_Wastewater_Treatment_Plant_aeration_basins_2025.jpg",
         "photo_author": "PortlandAppraisalBlog",
         "photo_licence": "CC BY-SA 4.0",
-        "attribution": "Photo: PortlandAppraisalBlog, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), via Wikimedia Commons. Resized from original."
+        "attribution": "Photo: PortlandAppraisalBlog, CC BY-SA 4.0, via Wikimedia Commons",
+        "photo_width": 843,
+        "photo_height": 631
       },
       {
         "name": "Groundwater Characterization & Monitoring",
@@ -137,14 +134,13 @@
         "slug": "groundwater-characterization-monitoring",
         "desc_en": "Groundwater characterization defines the aquifer beneath a site: its depth, flow direction, permeability and water quality. Monitoring wells are drilled and screened at target depths, then developed and surveyed so water levels can be compared across the site. Hydraulic properties are measured using slug tests or pumping tests, and water levels may be logged continuously with pressure transducers. Samples are collected using low-flow pumps or bailers and analysed for salinity, hydrocarbons, metals and other contaminants. Repeat monitoring rounds track changes over time. The results inform foundation and dewatering design, contamination studies, and long-term compliance monitoring around industrial and fuel facilities.",
         "desc_ar": "توصيف المياه الجوفية يحدد خصائص الطبقة المائية تحت الموقع: عمقها واتجاه جريانها ونفاذيتها وجودة مياهها. تُحفر آبار المراقبة وتُجهّز بمصافٍ عند الأعماق المستهدفة، ثم تُطوَّر وتُرفع مناسيبها مساحياً لتتيح مقارنة مستويات المياه عبر الموقع. وتُقاس الخصائص الهيدروليكية باختبارات الإزاحة السريعة أو اختبارات الضخ، وقد تُسجَّل مستويات المياه بصورة مستمرة بواسطة محولات الضغط. وتُجمع العينات بمضخات التدفق المنخفض أو بالدلاء الخاصة بالآبار، وتُحلَّل لقياس الملوحة والهيدروكربونات والمعادن وغيرها من الملوثات. وتتابع جولات المراقبة المتكررة التغيرات بمرور الوقت. وتُستخدم النتائج في تصميم الأساسات ونزح المياه، ودراسات التلوث، والمراقبة طويلة الأمد للامتثال حول المنشآت الصناعية ومنشآت الوقود.",
-        "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons description: groundwater monitoring well. Not viewed visually and not downloaded: this agent has no shell/download tool. Alternative: File:Groundwater_bailer_with_reel.jpg (Zangturang, CC BY-SA 4.0).",
+        "photo_file": "groundwater-characterization-monitoring.jpg",
         "photo_source_url": "https://commons.wikimedia.org/wiki/File:Groundwater_monitoring_well_at_Chelungpu_Fault_Preservation_Park.jpg",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Groundwater_monitoring_well_at_Chelungpu_Fault_Preservation_Park.jpg",
         "photo_author": "Kai3952",
         "photo_licence": "CC BY-SA 4.0",
-        "attribution": "Photo: Kai3952, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), via Wikimedia Commons. Resized from original."
+        "attribution": "Photo: Kai3952, CC BY-SA 4.0, via Wikimedia Commons (marking blurred)",
+        "photo_width": 741,
+        "photo_height": 555
       },
       {
         "name": "Contaminant Assessment Studies",
@@ -152,14 +148,13 @@
         "slug": "contaminant-assessment-studies",
         "desc_en": "Contaminant assessment studies determine what pollutants are present in soil, groundwater or sediment, how much there is, and how far it has spread. Investigators design a sampling grid based on likely sources, then collect soil cores using direct-push or drilling rigs, install monitoring wells, and screen samples in the field with instruments such as photoionisation detectors. Laboratory analysis targets the relevant chemicals, for example petroleum hydrocarbons, BTEX, PAHs, chlorinated solvents or heavy metals. Results are mapped to define the horizontal and vertical extent of the contamination plume. This delineation forms the basis for risk assessment, remediation design and regulatory reporting.",
         "desc_ar": "دراسات تقييم الملوثات تحدد الملوثات الموجودة في التربة أو المياه الجوفية أو الرواسب، وكمياتها، ومدى انتشارها. يصمم المحققون شبكة لأخذ العينات استناداً إلى المصادر المحتملة، ثم يستخرجون عينات لبّية من التربة باستخدام أجهزة الدفع المباشر أو الحفر، ويركّبون آبار المراقبة، ويفحصون العينات ميدانياً بأجهزة مثل كواشف التأين الضوئي. ويستهدف التحليل المخبري المواد الكيميائية ذات الصلة، ومنها الهيدروكربونات البترولية ومركبات BTEX والهيدروكربونات العطرية متعددة الحلقات والمذيبات المكلورة والمعادن الثقيلة. وتُرسم النتائج على خرائط لتحديد الامتداد الأفقي والرأسي لعمود التلوث. ويُشكّل هذا التحديد الأساس لتقييم المخاطر وتصميم المعالجة ورفع التقارير التنظيمية.",
-        "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons description: Geoprobe soil core sample from a former power plant site under NOAA contamination investigation. Not viewed visually and not downloaded: this agent has no shell/download tool.",
+        "photo_file": "contaminant-assessment-studies.jpg",
         "photo_source_url": "https://commons.wikimedia.org/wiki/File:St._George_Sites--09,_TPA_9,_Old_Power_Plant_-_DPLA_-_2834b0c3e5c7222d29348fa1cf4fa22a.JPG",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/St._George_Sites--09%2C_TPA_9%2C_Old_Power_Plant_-_DPLA_-_2834b0c3e5c7222d29348fa1cf4fa22a.JPG",
-        "photo_author": "National Oceanic and Atmospheric Administration (NOAA Office of Response and Restoration)",
-        "photo_licence": "Public domain (U.S. federal government work)",
-        "attribution": "Not required. Courtesy credit: NOAA, public domain, via Wikimedia Commons."
+        "photo_author": "Department of Commerce. National Oceanic and Atmospheric Administration. National Ocean Service. Office of Response and Restoration. Pribilof Islands Restoration Project Office. 1996-9/2008",
+        "photo_licence": "Public domain",
+        "attribution": "Photo: Department of Commerce. National Oceanic and Atmospheric Administration. National Ocean Service. Office of Response and Restoration. Pribilof Islands Restoration Project Office. 1996-9/2008, Public domain, via Wikimedia Commons",
+        "photo_width": 741,
+        "photo_height": 555
       },
       {
         "name": "Noise & Emission Modelling",
@@ -264,14 +259,13 @@
         "slug": "municipal-waste-management",
         "desc_en": "Municipal waste management covers the collection, transfer, treatment and disposal of household, commercial and similar solid waste. Consultants characterise the waste stream by composition and quantity, then plan collection systems, transfer stations, material recovery and recycling, composting of organic waste, and residual disposal. Engineered sanitary landfills use low-permeability liners, leachate collection and treatment, daily cover and compaction by heavy compactors, and landfill gas control, with groundwater monitoring around the site. Planning also covers closure and aftercare of old dumpsites. These services support municipalities and developers in reducing pollution, extending landfill life and meeting national waste regulations and recycling targets.",
         "desc_ar": "تشمل إدارة النفايات البلدية جمع النفايات الصلبة المنزلية والتجارية وما شابهها ونقلها ومعالجتها والتخلص منها. ويقوم الاستشاريون بتوصيف تيار النفايات من حيث التركيب والكمية، ثم يخططون لأنظمة الجمع ومحطات النقل واسترداد المواد وإعادة التدوير وتحويل النفايات العضوية إلى سماد والتخلص من المتبقي. وتعتمد المرادم الصحية المصممة هندسياً على بطانات منخفضة النفاذية، وجمع العصارة ومعالجتها، والتغطية اليومية والدمك بآليات دمك ثقيلة، والتحكم في غاز المرادم، مع مراقبة المياه الجوفية حول الموقع. ويشمل التخطيط أيضاً إغلاق المكبات القديمة ورعايتها بعد الإغلاق. وتدعم هذه الخدمات البلديات والمطورين في الحد من التلوث وإطالة عمر المرادم والامتثال للأنظمة الوطنية للنفايات وأهداف إعادة التدوير.",
-        "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons description: Caterpillar 826C landfill compactor at an operating landfill. Original is 1280x853 (already under 1600px). Not viewed visually and not downloaded: this agent has no shell/download tool. Larger alternative: File:Landfill_face.JPG (Ashley Felton, public domain, active tipping face).",
+        "photo_file": "municipal-waste-management.jpg",
         "photo_source_url": "https://commons.wikimedia.org/wiki/File:Landfill_compactor.jpg",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Landfill_compactor.jpg",
         "photo_author": "Ropable",
-        "photo_licence": "Public domain (released by author)",
-        "attribution": "Not required. Courtesy credit: Ropable, public domain, via Wikimedia Commons."
+        "photo_licence": "Public domain",
+        "attribution": "Photo: Ropable, Public domain, via Wikimedia Commons (marking blurred)",
+        "photo_width": 990,
+        "photo_height": 660
       },
       {
         "name": "Control of Oil Sludge",
