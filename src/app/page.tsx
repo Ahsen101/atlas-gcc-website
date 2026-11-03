@@ -213,6 +213,90 @@ function ProjectCard({ nameKey, idx, image, slug }: { nameKey: string; idx: numb
 }
 
 // ============================================================
+// Contact form: POSTs to the /api/contact Pages Function (stored in D1)
+// ============================================================
+type FormStatus = 'idle' | 'sending' | 'success' | 'validation' | 'rate' | 'server';
+
+function ContactForm() {
+  const { t, lang } = useLanguage();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [website, setWebsite] = useState('');
+  const [status, setStatus] = useState<FormStatus>('idle');
+
+  const inputClass = 'w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-atlas-500 focus:outline-none focus:ring-1 focus:ring-atlas-500 transition-colors';
+
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (status === 'sending') return;
+    const emailOk = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email.trim());
+    if (!name.trim() || !emailOk || !message.trim()) {
+      setStatus('validation');
+      return;
+    }
+    setStatus('sending');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ name, email, message, website, lang, page: window.location.pathname }),
+      });
+      const body = await res.json().catch(() => null);
+      if (res.ok && body && body.ok) {
+        setStatus('success');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else if (res.status === 400) {
+        setStatus('validation');
+      } else if (res.status === 429) {
+        setStatus('rate');
+      } else {
+        setStatus('server');
+      }
+    } catch {
+      setStatus('server');
+    }
+  };
+
+  const messageKey: Record<Exclude<FormStatus, 'idle' | 'sending'>, string> = {
+    success: 'contact.success',
+    validation: 'contact.errorValidation',
+    rate: 'contact.errorRate',
+    server: 'contact.errorServer',
+  };
+
+  return (
+    <form className="space-y-5" onSubmit={onSubmit} noValidate data-contact-form>
+      <div>
+        <label htmlFor="contact-name" className="block text-sm font-medium mb-2">{t('contact.name')}</label>
+        <input id="contact-name" name="name" type="text" required maxLength={120} autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} className={inputClass} placeholder={t('contact.namePlaceholder')} />
+      </div>
+      <div>
+        <label htmlFor="contact-email" className="block text-sm font-medium mb-2">{t('contact.email')}</label>
+        <input id="contact-email" name="email" type="email" required maxLength={254} autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass} placeholder={t('contact.emailPlaceholder')} dir="ltr" />
+      </div>
+      <div>
+        <label htmlFor="contact-message" className="block text-sm font-medium mb-2">{t('contact.projectDetails')}</label>
+        <textarea id="contact-message" name="message" rows={4} required maxLength={5000} value={message} onChange={(e) => setMessage(e.target.value)} className={`${inputClass} resize-none`} placeholder={t('contact.projectPlaceholder')} />
+      </div>
+      {/* Honeypot: hidden from people and assistive tech; bots that fill it are dropped server-side. */}
+      <div aria-hidden="true" style={{ position: 'absolute', width: '1px', height: '1px', margin: '-1px', padding: 0, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
+        <label htmlFor="contact-website">{t('contact.honeypot')}</label>
+        <input id="contact-website" name="website" type="text" tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
+      </div>
+      <button type="submit" disabled={status === 'sending'} aria-busy={status === 'sending'} className="w-full rounded-xl bg-atlas-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-atlas-600/25 hover:bg-atlas-500 hover:shadow-xl hover:shadow-atlas-500/30 transition-all hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0">
+        {status === 'sending' ? t('contact.sending') : t('contact.sendInquiry')}
+      </button>
+      <p aria-live="polite" role="status" data-contact-status={status} className={`text-sm min-h-[1.25rem] ${status === 'success' ? 'text-emerald-400' : 'text-red-400'}`}>
+        {status !== 'idle' && status !== 'sending' ? t(messageKey[status]) : ''}
+      </p>
+    </form>
+  );
+}
+
+// ============================================================
 // Main Page
 // ============================================================
 export default function Home() {
@@ -613,23 +697,7 @@ export default function Home() {
 
               {/* Contact form */}
               <div className="rounded-2xl border border-white/5 bg-white/[0.02] p-8">
-                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">{t('contact.name')}</label>
-                    <input type="text" className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-atlas-500 focus:outline-none focus:ring-1 focus:ring-atlas-500 transition-colors" placeholder={t('contact.namePlaceholder')} />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">{t('contact.email')}</label>
-                    <input type="email" className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-atlas-500 focus:outline-none focus:ring-1 focus:ring-atlas-500 transition-colors" placeholder={t('contact.emailPlaceholder')} dir="ltr" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">{t('contact.projectDetails')}</label>
-                    <textarea rows={4} className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-atlas-500 focus:outline-none focus:ring-1 focus:ring-atlas-500 transition-colors resize-none" placeholder={t('contact.projectPlaceholder')} />
-                  </div>
-                  <button type="submit" className="w-full rounded-xl bg-atlas-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-atlas-600/25 hover:bg-atlas-500 hover:shadow-xl hover:shadow-atlas-500/30 transition-all hover:-translate-y-0.5">
-                    {t('contact.sendInquiry')}
-                  </button>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>
