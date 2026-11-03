@@ -7,7 +7,7 @@ import { LanguageProvider } from '@/lib/i18n';
 const noindex = process.env.ATLAS_NOINDEX === '1';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://atlas-ges.pages.dev'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://atlasges.com'),
   ...(noindex ? { robots: { index: false, follow: false } } : {}),
   title: 'Atlas GES (Global Expert Services) | Geotechnical, Geophysical & Environmental Services',
   description: 'Leading provider of integrated geotechnical, geophysical, topographical and environmental services across Saudi Arabia.',

@@ -44,4 +44,4 @@ export function photoCredit(item: DetailItem): string | null {
   return parts.length ? `Photo: ${parts.join(' / ')}` : null;
 }
 
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://atlas-ges.pages.dev').replace(/\/$/, '');
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://atlasges.com').replace(/\/$/, '');
