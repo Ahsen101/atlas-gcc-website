@@ -14,7 +14,8 @@ interface Props {
   siblings: { slug: string; heading: string; headingAr: string }[];
 }
 
-const LATIN_RUN = /([A-Za-z0-9][A-Za-z0-9.:/+\-]*(?:[ ,][A-Za-z0-9][A-Za-z0-9.:/+\-]*)*)/g;
+// A token starts and ends with a letter/digit, so sentence punctuation (".", ":") stays outside the isolate.
+const LATIN_RUN = /([A-Za-z0-9](?:[A-Za-z0-9.:/+\-]*[A-Za-z0-9])?(?: [A-Za-z0-9](?:[A-Za-z0-9.:/+\-]*[A-Za-z0-9])?)*)/g;
 
 /** Isolate Latin tokens (units, standards, acronyms) inside Arabic text so bidi ordering stays correct. */
 function BidiText({ text, rtl }: { text: string; rtl: boolean }) {
