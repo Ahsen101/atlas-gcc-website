@@ -103,7 +103,7 @@ export default function CapabilityDetail({ service, card, siblings }: Props) {
                 <li key={item.slug}>
                   <a href={`#${item.slug}`} className="flex min-h-[44px] items-center gap-3 rounded-lg px-3 py-2 text-sm text-gray-300 hover:bg-white/[0.04] hover:text-atlas-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-atlas-400">
                     <span className="text-xs font-bold text-atlas-500" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
-                    <BidiText text={ar ? item.name_ar : item.name} rtl={ar} />
+                    <span><BidiText text={ar ? item.name_ar : item.name} rtl={ar} /></span>
                   </a>
                 </li>
               ))}
