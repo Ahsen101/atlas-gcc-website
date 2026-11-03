@@ -24,7 +24,7 @@ PAGES = ["surveys", "geotechnical", "geophysical", "geological-mapping", "enviro
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = sys.argv[1] if len(sys.argv) > 1 else "/home/aiciv/exports/atlas-gcc-content"
 MAX_EDGE = 1200
-MAX_BYTES = 150 * 1024
+MAX_BYTES = 150_000  # NFR-3: at most 150 KB (decimal, strictest reading)
 
 
 def optimise(src_path, dst_path):
