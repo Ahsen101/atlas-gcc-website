@@ -390,11 +390,10 @@ export default function Home() {
 
       {/* ======== STATS BAR ======== */}
       <section className="relative border-y border-white/5 bg-atlas-950">
-        <div className="mx-auto max-w-6xl px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mx-auto max-w-6xl px-6 py-16 grid grid-cols-1 sm:grid-cols-3 gap-8">
           <Counter end={200} suffix="m" labelKey="stats.maxDrillDepth" />
           <Counter end={50} suffix="+" labelKey="stats.projectsCompleted" />
           <Counter end={15} suffix="+" labelKey="stats.yearsExperience" />
-          <Counter end={2} suffix="" labelKey="stats.countries" />
         </div>
       </section>
 
@@ -419,10 +418,6 @@ export default function Home() {
                 <div className="rounded-xl border border-white/5 bg-white/[0.02] p-4 flex-1">
                   <div className="text-2xl font-bold text-atlas-400" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>KSA</div>
                   <div className="text-xs text-gray-500 mt-1">{t('about.headquarters')}</div>
-                </div>
-                <div className="rounded-xl border border-white/5 bg-white/[0.02] p-4 flex-1">
-                  <div className="text-2xl font-bold text-atlas-400" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>BHR</div>
-                  <div className="text-xs text-gray-500 mt-1">{t('about.operations')}</div>
                 </div>
                 <div className="rounded-xl border border-white/5 bg-white/[0.02] p-4 flex-1">
                   <div className="text-2xl font-bold text-atlas-400" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>ISO</div>
@@ -615,11 +610,10 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-3 stagger">
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 max-w-4xl mx-auto stagger">
             {[
               { titleKey: 'cert.iso.title', descKey: 'cert.iso.desc', image: '/images/cert-iso.png' },
               { titleKey: 'cert.cr.title', descKey: 'cert.cr.desc', image: '/images/cert-1.jpeg' },
-              { titleKey: 'cert.sce.title', descKey: 'cert.sce.desc', image: '/images/cert-2.jpeg' },
             ].map((cert) => (
               <div key={cert.titleKey} className="reveal-scale rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden hover:border-atlas-500/20 hover:bg-white/[0.04] transition-all duration-500 group">
                 <div className="relative h-48 overflow-hidden bg-white/5 flex items-center justify-center p-4">

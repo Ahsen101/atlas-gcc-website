@@ -10,12 +10,12 @@ export default function GeophysicalPage() {
       heroImage="/images/service-seismic-field.jpeg"
       secondaryImages={["/images/service-geophysical.jpeg", "/images/service-gpr.jpeg"]}
       description={[
-        "ATLAS GES is a leading provider of geophysical testing services in the Kingdom of Saudi Arabia and Bahrain. Our methods apply to all fields of engineering geophysics, both onshore and offshore.",
+        "ATLAS GES is a leading provider of geophysical testing services in the Kingdom of Saudi Arabia. Our methods apply to all fields of engineering geophysics, both onshore and offshore.",
         "Our geophysical surveys use advanced non-invasive techniques to map subsurface conditions, detect anomalies, and characterize geological features. From seismic refraction to ground penetrating radar, we deploy the right technology for every site condition.",
         "We provide comprehensive borehole geophysical services including suspension logging, full-wave sonic logging, and cross-hole seismic tomography for detailed subsurface characterization.",
       ]}
       descriptionAr={[
-        "تُعد أطلس مزوداً رائداً لخدمات الاختبارات الجيوفيزيائية في المملكة العربية السعودية والبحرين. وتُطبَّق أساليبنا على جميع مجالات الجيوفيزياء الهندسية، براً وبحراً.",
+        "تُعد أطلس مزوداً رائداً لخدمات الاختبارات الجيوفيزيائية في المملكة العربية السعودية. وتُطبَّق أساليبنا على جميع مجالات الجيوفيزياء الهندسية، براً وبحراً.",
         "تستخدم مسوحاتنا الجيوفيزيائية تقنيات متقدمة وغير تدخلية لرسم خرائط الظروف تحت السطحية، والكشف عن الشذوذات، وتوصيف المعالم الجيولوجية. ومن الانكسار الزلزالي إلى رادار اختراق الأرض، ننشر التقنية المناسبة لكل ظرف من ظروف الموقع.",
         "نقدم خدمات جيوفيزيائية شاملة للآبار تشمل التسجيل بالتعليق، والتسجيل الصوتي الكامل الموجة، والتصوير المقطعي الزلزالي بين الآبار للحصول على توصيف تفصيلي لما تحت السطح.",
       ]}

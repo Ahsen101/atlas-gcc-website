@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://atlas-ges.pages.dev'),
   ...(noindex ? { robots: { index: false, follow: false } } : {}),
   title: 'Atlas GES (Global Expert Services) | Geotechnical, Geophysical & Environmental Services',
-  description: 'Leading provider of integrated geotechnical, geophysical, topographical and environmental services across Saudi Arabia and Bahrain.',
+  description: 'Leading provider of integrated geotechnical, geophysical, topographical and environmental services across Saudi Arabia.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

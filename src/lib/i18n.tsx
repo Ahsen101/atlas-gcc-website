@@ -33,7 +33,7 @@ const translations: Record<string, Record<Lang, string>> = {
   'nav.getInTouch': { en: 'Get in Touch', ar: 'تواصل معنا' },
 
   // Hero
-  'hero.badge': { en: 'Saudi Arabia & Bahrain', ar: 'المملكة العربية السعودية والبحرين' },
+  'hero.badge': { en: 'Saudi Arabia', ar: 'المملكة العربية السعودية' },
   'hero.title1': { en: 'Exploring', ar: 'استكشاف' },
   'hero.title2': { en: "Earth's Foundations", ar: 'أساسات الأرض' },
   'hero.subtitle': {
@@ -47,22 +47,20 @@ const translations: Record<string, Record<Lang, string>> = {
   'stats.maxDrillDepth': { en: 'Max Drill Depth', ar: 'أقصى عمق حفر' },
   'stats.projectsCompleted': { en: 'Projects Completed', ar: 'مشاريع مكتملة' },
   'stats.yearsExperience': { en: 'Years Experience', ar: 'سنوات خبرة' },
-  'stats.countries': { en: 'Countries', ar: 'دول' },
 
   // About
   'about.tag': { en: 'About Us', ar: 'من نحن' },
   'about.title1': { en: 'Precision below.', ar: 'دقة في الأعماق.' },
   'about.title2': { en: 'Confidence above.', ar: 'ثقة في البناء.' },
   'about.p1': {
-    en: 'ATLAS Earth Exploration is a Geotechnical, Geophysical, Topography Surveying and Environmental Consultancy Company headquartered in Al Khobar, Kingdom of Saudi Arabia, with operations extending to Bahrain.',
-    ar: 'أطلس لاستكشاف الأرض هي شركة استشارات جيوتقنية وجيوفيزيائية ومسح طبوغرافي وبيئي يقع مقرها الرئيسي في الخبر، المملكة العربية السعودية، مع عمليات تمتد إلى البحرين.',
+    en: 'ATLAS Earth Exploration is a Geotechnical, Geophysical, Topography Surveying and Environmental Consultancy Company headquartered in Al Khobar, Kingdom of Saudi Arabia.',
+    ar: 'أطلس لاستكشاف الأرض هي شركة استشارات جيوتقنية وجيوفيزيائية ومسح طبوغرافي وبيئي يقع مقرها الرئيسي في الخبر، المملكة العربية السعودية.',
   },
   'about.p2': {
     en: 'We maintain a broad range of field instrumentation and equipment, with in-house computing facilities including advanced hardware and software for data processing, contouring, plotting and presentation.',
     ar: 'نحتفظ بمجموعة واسعة من أجهزة ومعدات الحقل، مع مرافق حوسبة داخلية تشمل أجهزة وبرامج متقدمة لمعالجة البيانات والرسم والعرض.',
   },
   'about.headquarters': { en: 'Headquarters', ar: 'المقر الرئيسي' },
-  'about.operations': { en: 'Operations', ar: 'العمليات' },
   'about.certified': { en: 'Certified', ar: 'معتمد' },
   'about.qualityCertified': { en: 'Quality Certified', ar: 'معتمد الجودة' },
 
@@ -209,8 +207,6 @@ const translations: Record<string, Record<Lang, string>> = {
   'cert.iso.desc': { en: 'Quality Management System certified', ar: 'نظام إدارة الجودة معتمد' },
   'cert.cr.title': { en: 'Saudi CR', ar: 'السجل التجاري السعودي' },
   'cert.cr.desc': { en: 'Commercial Registration: 7032404258', ar: 'السجل التجاري: 7032404258' },
-  'cert.sce.title': { en: 'Bahrain SCE', ar: 'المجلس الأعلى للبيئة - البحرين' },
-  'cert.sce.desc': { en: 'Category B Environmental Consultant', ar: 'استشاري بيئي الفئة ب' },
 
   // Contact
   'contact.tag': { en: 'Get in Touch', ar: 'تواصل معنا' },
