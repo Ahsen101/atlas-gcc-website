@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import Image from 'next/image';
 import { useLanguage } from '@/lib/i18n';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import ThemeToggle from '@/components/ThemeToggle';
 
 // ============================================================
 // Scroll-reveal hook
@@ -121,6 +122,7 @@ function Navbar() {
             </a>
           ))}
           <LanguageSwitcher />
+          <ThemeToggle />
           <a href="#contact" className="rounded-full bg-atlas-600 px-5 py-2 text-sm font-semibold text-white hover:bg-atlas-500 transition-all hover:shadow-lg hover:shadow-atlas-500/20 hover:-translate-y-0.5">
             {t('nav.getInTouch')}
           </a>
@@ -129,6 +131,7 @@ function Navbar() {
         {/* Mobile toggle */}
         <div className="flex md:hidden items-center gap-3">
           <LanguageSwitcher />
+          <ThemeToggle />
           <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 text-gray-300">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               {menuOpen ? <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

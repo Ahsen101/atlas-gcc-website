@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/lib/i18n';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import ThemeToggle from '@/components/ThemeToggle';
 import { detailHref } from '@/content/card-links';
 
 interface ServicePageProps {
@@ -52,6 +53,7 @@ export default function ServicePage({ title, titleAr, subtitle, subtitleAr, hero
             <a href="/#services" className="hidden md:inline text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('shared.allServices')}</a>
             <a href="/#projects" className="hidden md:inline text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('nav.projects')}</a>
             <LanguageSwitcher />
+            <ThemeToggle />
             <a href="/#contact" className="hidden md:inline-block rounded-full bg-atlas-600 px-5 py-2 text-sm font-semibold text-white hover:bg-atlas-500 transition-all hover:shadow-lg hover:shadow-atlas-500/20 hover:-translate-y-0.5">
               {t('nav.getInTouch')}
             </a>

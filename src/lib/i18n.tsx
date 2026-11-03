@@ -268,6 +268,10 @@ const translations: Record<string, Record<Lang, string>> = {
   'detail.photo': { en: 'Photo', ar: 'صورة' },
   'detail.credits': { en: 'Photo credits', ar: 'حقوق الصور' },
 
+  // Theme toggle
+  'theme.toLight': { en: 'Switch to light theme', ar: 'التبديل إلى الوضع الفاتح' },
+  'theme.toDark': { en: 'Switch to dark theme', ar: 'التبديل إلى الوضع الداكن' },
+
   // Contact form states
   'contact.sending': { en: 'Sending...', ar: 'جارٍ الإرسال...' },
   'contact.success': {
