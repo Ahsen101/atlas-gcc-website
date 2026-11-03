@@ -1,4 +1,8 @@
+import type { Metadata } from 'next';
+import { canonicalMeta } from '@/content/services';
 import ServicePage from '../ServicePage';
+
+export const metadata: Metadata = canonicalMeta('/services/health-safety/');
 
 export default function HealthSafetyPage() {
   return (

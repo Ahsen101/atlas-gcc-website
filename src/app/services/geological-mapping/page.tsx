@@ -1,4 +1,8 @@
+import type { Metadata } from 'next';
+import { canonicalMeta } from '@/content/services';
 import ServicePage from '../ServicePage';
+
+export const metadata: Metadata = canonicalMeta('/services/geological-mapping/');
 
 export default function GeologicalMappingPage() {
   return (
