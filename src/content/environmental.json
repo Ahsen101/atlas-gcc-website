@@ -11,10 +11,8 @@
         "desc_en": "An Environmental and Social Impact Assessment is a structured study carried out before a project is approved, to predict how it will affect the land, air, water, ecology and surrounding communities. It begins with scoping to identify the key issues, then draws on baseline surveys, technical modelling and stakeholder consultation. Each impact is rated for magnitude and significance, and mitigation measures are proposed to avoid, reduce or offset it. The findings are compiled into an ESIA report for the regulator and, where relevant, lenders following frameworks such as the IFC Performance Standards. It is used to secure environmental approval for infrastructure, industrial and real estate projects.",
         "desc_ar": "تقييم الأثر البيئي والاجتماعي دراسة منهجية تُجرى قبل اعتماد المشروع، للتنبؤ بتأثيره على الأرض والهواء والمياه والنظم البيئية والمجتمعات المحيطة. تبدأ الدراسة بمرحلة تحديد النطاق لتعيين القضايا الرئيسية، ثم تعتمد على المسوحات المرجعية والنمذجة الفنية والتشاور مع أصحاب المصلحة. ويُقيَّم كل أثر من حيث حجمه وأهميته، وتُقترح تدابير للتخفيف من شأنها تجنّبه أو الحد منه أو تعويضه. وتُجمع النتائج في تقرير تقييم الأثر البيئي والاجتماعي يُقدَّم إلى الجهة التنظيمية، وعند الاقتضاء إلى جهات التمويل التي تتبع أطراً مثل معايير الأداء الصادرة عن مؤسسة التمويل الدولية. ويُستخدم هذا التقييم للحصول على الموافقة البيئية لمشاريع البنية التحتية والمشاريع الصناعية والعقارية.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "An ESIA is a desk-and-field study process and a report; no licensed photograph shows 'an ESIA' itself. Generic substitutes (meetings, landscapes) rejected per brief.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -25,14 +23,13 @@
         "slug": "environmental-baseline-studies-ebs",
         "desc_en": "An Environmental Baseline Study records the existing condition of a site and its surroundings before construction or operation begins. Field teams sample soil, surface water, groundwater and marine sediment, measure ambient air quality and noise, and survey habitats, flora and fauna, often across more than one season. Samples are analysed in accredited laboratories, and results are compared with national and international guideline values. The baseline becomes the reference point against which future change is measured. It feeds directly into impact assessments, supports monitoring programmes during construction and operation, and protects the project owner by documenting conditions that existed before the work started.",
         "desc_ar": "الدراسة البيئية المرجعية توثّق الحالة القائمة للموقع ومحيطه قبل بدء الإنشاء أو التشغيل. تأخذ الفرق الميدانية عينات من التربة والمياه السطحية والمياه الجوفية والرواسب البحرية، وتقيس جودة الهواء المحيط ومستويات الضوضاء، وتمسح الموائل والنباتات والحيوانات، وغالباً ما يمتد ذلك على أكثر من موسم. وتُحلَّل العينات في مختبرات معتمدة، وتُقارن النتائج بالقيم الإرشادية الوطنية والدولية. وتصبح هذه الحالة المرجعية نقطة الأساس التي يُقاس عليها أي تغيّر مستقبلي. وتغذّي الدراسة تقييمات الأثر مباشرة، وتدعم برامج المراقبة أثناء الإنشاء والتشغيل، وتحمي مالك المشروع بتوثيق الظروف التي كانت قائمة قبل بدء الأعمال.",
-        "photo_file": null,
-        "photo_status": "no_honest_photo",
-        "photo_note": "No licensed photo found that clearly shows baseline survey fieldwork (Commons searches for ecological/baseline field survey returned nothing usable). Not substituted with a generic landscape.",
-        "photo_source_url": null,
-        "photo_download_url": null,
-        "photo_author": null,
-        "photo_licence": null,
-        "attribution": null
+        "photo_file": "environmental-baseline-studies-ebs.jpg",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Day_4-_Vegetation_Transects_(36347315390).jpg",
+        "photo_author": "BLM Alaska",
+        "photo_licence": "Public domain",
+        "attribution": "Photo: BLM Alaska, Public domain, via Wikimedia Commons",
+        "photo_width": 959,
+        "photo_height": 638
       },
       {
         "name": "Environmental Risk Assessment (ERA)",
@@ -41,10 +38,8 @@
         "desc_en": "An Environmental Risk Assessment estimates the likelihood and consequences of harm to people or ecosystems from a hazard such as a chemical release, contaminated land or an industrial process. It typically follows a source-pathway-receptor model: identifying what could be released, how it could travel through soil, water or air, and who or what could be exposed. Exposure is quantified using site data, fate-and-transport calculations and toxicity reference values, and the resulting risk is compared with acceptable limits. The outcome guides decisions on whether action is needed, how urgent it is, and which controls or clean-up targets are proportionate for the project.",
         "desc_ar": "تقييم المخاطر البيئية يقدّر احتمال وقوع الضرر على الإنسان أو النظم البيئية وعواقبه، نتيجة خطر مثل تسرّب مادة كيميائية أو أرض ملوثة أو عملية صناعية. ويتبع عادةً نموذج المصدر والمسار والمُستقبِل: أي تحديد ما قد يتسرّب، وكيف قد ينتقل عبر التربة أو المياه أو الهواء، ومن أو ما الذي قد يتعرّض له. ويُحسب مستوى التعرّض باستخدام بيانات الموقع وحسابات انتقال الملوثات ومصيرها وقيم السمية المرجعية، ثم تُقارن المخاطر الناتجة بالحدود المقبولة. وتوجّه النتيجة القرارات بشأن الحاجة إلى التدخل ومدى إلحاحه، وأي الضوابط أو أهداف التنظيف تتناسب مع المشروع.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "ERA is an analytical method (calculations and modelling); there is no photograph of the thing itself. Generic substitutes rejected.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -70,10 +65,8 @@
         "desc_en": "Environmental auditing is a systematic, documented check of whether a facility or project is meeting its legal requirements, permit conditions and internal environmental management system. Auditors review records, monitoring data and procedures, inspect operations, and interview staff, then report findings and corrective actions. Permitting is the parallel process of obtaining and maintaining the approvals a project needs, such as environmental clearance, air emission and wastewater discharge permits, and waste handling licences. This involves preparing applications, technical supporting studies and compliance reports for the regulator. Together, auditing and permitting help projects start on time, operate lawfully and avoid penalties or shutdowns.",
         "desc_ar": "التدقيق البيئي فحص منهجي وموثّق للتحقق من التزام المنشأة أو المشروع بالمتطلبات القانونية وشروط التراخيص ونظام الإدارة البيئية الداخلي. يراجع المدققون السجلات وبيانات المراقبة والإجراءات، ويعاينون العمليات، ويقابلون الموظفين، ثم يرفعون تقريراً بالنتائج والإجراءات التصحيحية. أما التراخيص فهي العملية الموازية للحصول على الموافقات التي يحتاجها المشروع والمحافظة عليها، مثل الموافقة البيئية وتصاريح انبعاثات الهواء وتصريف مياه الصرف وتراخيص التعامل مع النفايات. ويشمل ذلك إعداد الطلبات والدراسات الفنية الداعمة وتقارير الامتثال للجهة التنظيمية. ويساعد التدقيق والتراخيص معاً المشاريع على البدء في موعدها والعمل وفق القانون وتجنّب الغرامات أو الإيقاف.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "Auditing and permitting are document and inspection processes; no licensed photo shows them specifically. Generic office/paperwork images rejected.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -105,14 +98,13 @@
         "slug": "air-pollution-assessment",
         "desc_en": "Air pollution assessment measures and evaluates the concentration of pollutants in the air around a site or emitted from its sources. Common parameters include particulate matter (PM10 and PM2.5), nitrogen dioxide, sulphur dioxide, carbon monoxide, ozone, hydrogen sulphide and volatile organic compounds. Monitoring uses continuous analysers housed in monitoring stations, portable dust monitors, passive diffusion tubes and stack sampling for point sources, supported by weather data. Results are compared with national ambient air quality standards and international guidelines. The assessment is used in impact studies, to set baseline conditions, to demonstrate permit compliance, and to manage dust during construction.",
         "desc_ar": "تقييم تلوث الهواء يقيس تركيز الملوثات في الهواء المحيط بالموقع أو المنبعثة من مصادره ويقيّمها. ومن المؤشرات الشائعة الجسيمات العالقة (PM10 وPM2.5) وثاني أكسيد النيتروجين وثاني أكسيد الكبريت وأول أكسيد الكربون والأوزون وكبريتيد الهيدروجين والمركبات العضوية المتطايرة. وتعتمد المراقبة على أجهزة تحليل مستمرة مثبّتة في محطات المراقبة، وأجهزة محمولة لقياس الغبار، وأنابيب الانتشار السلبي، وأخذ العينات من المداخن للمصادر النقطية، مدعومة ببيانات الأرصاد الجوية. وتُقارن النتائج بالمعايير الوطنية لجودة الهواء المحيط والإرشادات الدولية. ويُستخدم التقييم في دراسات الأثر، وتحديد الظروف المرجعية، وإثبات الامتثال لشروط التراخيص، وإدارة الغبار أثناء الإنشاء.",
-        "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons description: EPA Victoria air monitoring station. Not viewed visually and not downloaded: this agent has no shell/download tool.",
-        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Air_monitoring_station_-_Morwell_South_-_Victoria.jpg",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Air_monitoring_station_-_Morwell_South_-_Victoria.jpg",
-        "photo_author": "Environment Protection Authority Victoria",
+        "photo_file": "air-pollution-assessment.jpg",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Air_Quality_Monitoring_Station_Keene_NH_July_2025_01.jpg",
+        "photo_author": "Artaxerxes",
         "photo_licence": "CC BY 4.0",
-        "attribution": "Photo: Environment Protection Authority Victoria, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), via Wikimedia Commons."
+        "attribution": "Photo: Artaxerxes, CC BY 4.0, via Wikimedia Commons",
+        "photo_width": 900,
+        "photo_height": 1200
       },
       {
         "name": "Water & Wastewater Services",
@@ -163,10 +155,8 @@
         "desc_en": "Noise and emission modelling uses computer models to predict how sound and air pollutants from a project will spread into the surrounding area. For noise, engineers build a digital model of terrain, buildings and sources such as plant, traffic and construction equipment, then calculate sound levels at nearby receptors using methods such as ISO 9613-2. For air emissions, dispersion models such as AERMOD or CALPUFF combine emission rates, stack parameters and local meteorological data to estimate ground-level concentrations. Predictions are checked against standards and used to test mitigation, such as noise barriers, taller stacks or revised layouts, before anything is built.",
         "desc_ar": "نمذجة الضوضاء والانبعاثات تستخدم نماذج حاسوبية للتنبؤ بكيفية انتشار الأصوات وملوثات الهواء الصادرة عن المشروع في المنطقة المحيطة. ففي حالة الضوضاء، يبني المهندسون نموذجاً رقمياً للتضاريس والمباني ومصادر الصوت مثل المعدات وحركة المرور وآليات الإنشاء، ثم يحسبون مستويات الصوت عند المستقبِلات القريبة بطرق مثل المعيار ISO 9613-2. أما في حالة انبعاثات الهواء، فتجمع نماذج التشتت مثل AERMOD أو CALPUFF بين معدلات الانبعاث وخصائص المداخن وبيانات الأرصاد الجوية المحلية لتقدير التراكيز على مستوى الأرض. وتُقارن التنبؤات بالمعايير، وتُستخدم لاختبار تدابير التخفيف مثل الحواجز الصوتية أو رفع المداخن أو تعديل المخططات قبل تنفيذ أي إنشاء.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "Modelling is software output; a photo of a sound level meter or a smokestack would be a generic substitute, which the brief rejects. A licensed noise-contour map could work but it is a diagram, not a photograph.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -178,10 +168,8 @@
         "desc_en": "Environmental and Social Management Planning turns the commitments made in an impact assessment into a practical plan the project team can follow. The Environmental and Social Management Plan (ESMP) lists each impact, the mitigation measure, who is responsible, when it applies, and how it will be monitored and reported. It often includes sub-plans for dust, noise, waste, traffic, spill response, biodiversity, community grievances and labour conditions. Contractors are briefed on the plan, and site inspections and monitoring data check that it is being followed. The ESMP is a common approval condition and the main tool for managing environmental performance during construction and operation.",
         "desc_ar": "التخطيط للإدارة البيئية والاجتماعية يحوّل الالتزامات الواردة في تقييم الأثر إلى خطة عملية يتبعها فريق المشروع. وتحدد خطة الإدارة البيئية والاجتماعية كل أثر، وتدبير التخفيف الخاص به، والجهة المسؤولة، وتوقيت تطبيقه، وطريقة مراقبته والإبلاغ عنه. وكثيراً ما تتضمن خططاً فرعية للغبار والضوضاء والنفايات وحركة المرور والاستجابة للتسربات والتنوع البيولوجي وشكاوى المجتمع وظروف العمل. ويُطلَع المقاولون على الخطة، وتتحقق عمليات التفتيش الميداني وبيانات المراقبة من الالتزام بها. وتُعد هذه الخطة شرطاً شائعاً للموافقة، والأداة الرئيسية لإدارة الأداء البيئي أثناء الإنشاء والتشغيل.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "An ESMP is a management document; no licensed photograph shows it. Generic substitutes rejected.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -199,14 +187,13 @@
         "slug": "groundwater-remediation",
         "desc_en": "Groundwater remediation removes or reduces contaminants in an aquifer so the water no longer poses a risk to people, the environment or nearby structures. Common methods include pump-and-treat, where water is extracted through wells and cleaned with oil-water separators, air strippers or activated carbon; air sparging and soil vapour extraction for volatile fuels; in-situ chemical oxidation; enhanced bioremediation; and permeable reactive barriers. Where conditions allow, monitored natural attenuation may be used. The choice depends on the contaminant, soil type and groundwater flow. Remediation is applied at fuel stations, refineries, terminals and industrial sites, and progress is tracked through regular monitoring well sampling.",
         "desc_ar": "معالجة المياه الجوفية تزيل الملوثات من الطبقة المائية أو تخفضها بحيث لا تعود المياه تشكّل خطراً على الإنسان أو البيئة أو المنشآت المجاورة. ومن الطرق الشائعة الضخ والمعالجة، حيث تُستخرج المياه عبر الآبار وتُنقّى بفواصل الزيت عن الماء أو أبراج التجريد الهوائي أو الكربون المنشط؛ والحقن الهوائي واستخلاص أبخرة التربة للوقود المتطاير؛ والأكسدة الكيميائية في الموقع؛ والمعالجة الحيوية المعززة؛ والحواجز التفاعلية النفّاذة. وحيثما تسمح الظروف، يمكن الاعتماد على التخفيف الطبيعي المراقَب. ويعتمد الاختيار على نوع الملوث وطبيعة التربة وجريان المياه الجوفية. وتُطبَّق المعالجة في محطات الوقود والمصافي والمحطات الطرفية والمواقع الصناعية، ويُتابَع التقدم من خلال أخذ عينات دورية من آبار المراقبة.",
-        "photo_file": null,
-        "photo_status": "no_honest_photo",
-        "photo_note": "Best candidate (USAG Ansbach PFAS pump-and-treat startup, public domain) was rejected after checking its description: it shows a commander pressing a ceremonial start button, not the treatment system. No other licensed photo of an operating remediation system was found.",
-        "photo_source_url": null,
-        "photo_download_url": null,
-        "photo_author": null,
-        "photo_licence": null,
-        "attribution": null
+        "photo_file": "groundwater-remediation.jpg",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:USAG_Ansbach_PFAS_Pump_and_Treat_system_startup_event_(8701953).jpg",
+        "photo_author": "U.S. Army photo by Jonathan Bell",
+        "photo_licence": "Public domain",
+        "attribution": "Photo: U.S. Army photo by Jonathan Bell, Public domain, via Wikimedia Commons",
+        "photo_width": 959,
+        "photo_height": 718
       },
       {
         "name": "UST & AST Investigation & Closure",
@@ -214,14 +201,13 @@
         "slug": "ust-ast-investigation-closure",
         "desc_en": "Underground storage tanks (USTs) and aboveground storage tanks (ASTs) hold fuels and chemicals that can leak into soil and groundwater. Investigation includes reviewing tank and pipework records, tightness testing, inspecting tank shells and secondary containment, and sampling soil and groundwater around the tanks and lines. When a tank is taken out of service, closure involves emptying it, removing residues and sludge, degassing to a safe atmosphere, and then either removing the tank or closing it in place by filling it with inert material. Excavation soils are tested, and a closure report documents the work. This is required at fuel stations, depots and industrial sites.",
         "desc_ar": "تحتوي خزانات التخزين تحت الأرض وفوقها على الوقود والمواد الكيميائية التي قد تتسرب إلى التربة والمياه الجوفية. ويشمل التحقيق مراجعة سجلات الخزانات والأنابيب، واختبارات الإحكام، وفحص جدران الخزانات وأنظمة الاحتواء الثانوي، وأخذ عينات من التربة والمياه الجوفية حول الخزانات وخطوطها. وعند إخراج الخزان من الخدمة، يتضمن الإغلاق تفريغه، وإزالة البقايا والحمأة، وتفريغ الغازات حتى يصل إلى أجواء آمنة، ثم إما إزالة الخزان أو إغلاقه في مكانه بملئه بمادة خاملة. وتُفحص تربة الحفر، ويوثّق تقرير الإغلاق الأعمال المنفذة. ويُعد ذلك مطلوباً في محطات الوقود والمستودعات والمواقع الصناعية.",
-        "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons description: backhoe removing three underground storage tanks from a gas station. Not viewed visually and not downloaded: this agent has no shell/download tool.",
-        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Gasstation_tank_removal.jpg",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Gasstation_tank_removal.jpg",
-        "photo_author": "Versageek",
-        "photo_licence": "CC BY-SA 3.0",
-        "attribution": "Photo: Versageek, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons. Resized from original."
+        "photo_file": "ust-ast-investigation-closure.jpg",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Office_of_Solid_Waste_and_Emergency_Response_-_Investigation_and_Removal_Action_DDOE,_Leaking_Underground_Storage_Tank._Project_Funded_by_American_Recovery_and_Reinvestment_Act_(ARR_-_DPLA_-_6862c6df02c4f9c6e01d18e137b463c0.jpg",
+        "photo_author": "U.S. Environmental Protection Agency, Office of Public Affairs",
+        "photo_licence": "Public domain",
+        "attribution": "Photo: U.S. Environmental Protection Agency, Office of Public Affairs, Public domain, via Wikimedia Commons (cropped)",
+        "photo_width": 816,
+        "photo_height": 765
       },
       {
         "name": "Remedial Design & Feasibility Studies",
@@ -230,10 +216,8 @@
         "desc_en": "A remediation feasibility study compares the realistic options for cleaning up a contaminated site. Using investigation data and risk-based clean-up targets, it screens technologies and evaluates shortlisted alternatives for effectiveness, long-term reliability, ease of implementation, time to complete, cost and regulatory acceptance. Bench-scale or pilot tests may be run to confirm performance under site conditions. Once an option is selected, remedial design converts it into buildable form: design calculations, layout drawings, equipment specifications, a monitoring plan and health and safety requirements for the works. This gives clients a defensible basis for budgeting, procurement and regulatory approval before remediation begins.",
         "desc_ar": "دراسة جدوى المعالجة تقارن بين الخيارات الواقعية لتنظيف الموقع الملوث. وبالاستناد إلى بيانات التحقيق وأهداف التنظيف القائمة على المخاطر، تُجري الدراسة فرزاً للتقنيات وتقيّم البدائل المختارة من حيث الفعالية والموثوقية على المدى الطويل وسهولة التنفيذ ومدة الإنجاز والتكلفة وقبول الجهات التنظيمية. وقد تُجرى اختبارات مخبرية أو تجريبية للتحقق من الأداء في ظروف الموقع. وبعد اختيار الخيار، يحوّله التصميم العلاجي إلى صيغة قابلة للتنفيذ: حسابات تصميمية ومخططات للتوزيع ومواصفات للمعدات وخطة مراقبة ومتطلبات الصحة والسلامة للأعمال. ويمنح ذلك العملاء أساساً متيناً لإعداد الميزانية والمشتريات والحصول على الموافقة التنظيمية قبل بدء المعالجة.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "Feasibility studies and remedial design are engineering desk work and documents; no licensed photo shows the thing itself. Generic substitutes rejected.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -245,10 +229,8 @@
         "desc_en": "Remediation products are the materials used to treat or contain contamination in soil and groundwater. They include chemical oxidants such as persulfate and permanganate that break down hydrocarbons and solvents, oxygen-release and electron-donor compounds that stimulate natural biodegradation, microbial cultures for bioaugmentation, activated carbon for adsorption, and sorbent pads, booms and granules for capturing oil. Products are selected based on the contaminant type, soil chemistry and groundwater conditions, and are often tested at bench scale first. They are applied by injection through wells or direct-push points, mixed into excavated soil, or placed in treatment units, as part of a designed remediation programme.",
         "desc_ar": "منتجات المعالجة هي المواد المستخدمة لمعالجة التلوث في التربة والمياه الجوفية أو احتوائه. وتشمل المؤكسدات الكيميائية مثل البيرسلفات والبرمنغنات التي تُفكك الهيدروكربونات والمذيبات، والمركبات المطلِقة للأكسجين والمانحة للإلكترونات التي تحفّز التحلل الحيوي الطبيعي، والمزارع الميكروبية للتعزيز الحيوي، والكربون المنشط للامتزاز، والوسائد والحواجز والحبيبات الماصة لالتقاط الزيوت. وتُختار المنتجات بحسب نوع الملوث وكيمياء التربة وظروف المياه الجوفية، وغالباً ما تُختبر مخبرياً أولاً. وتُطبَّق بالحقن عبر الآبار أو نقاط الدفع المباشر، أو بخلطها مع التربة المحفورة، أو بوضعها في وحدات المعالجة، ضمن برنامج معالجة مصمَّم.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
-        "photo_note": "This is a broad product category; no single licensed photo honestly represents it. A sorbent-boom photo found (Massachusetts DEP, CC BY 2.0) is only 674px wide and depicts spill response rather than the category, so it was not used.",
+        "photo_note": "No photo. A broad product category with no single honest image. Sorbent-boom photos were checked: one (Ocean Environmental boat) shows a company name and phone number; others show the boom too small to read as a product, or are BP-branded clean-ups. Not substituted.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -274,13 +256,11 @@
         "desc_en": "Oil sludge is a thick mixture of oil, water and solids that builds up in storage tank bottoms, oil-water separators, refinery units and drilling operations, and is often classed as hazardous waste. Control starts with characterising the sludge for oil content, water, solids and metals, then minimising how much is produced. Treatment options include mechanical tank cleaning, centrifuge separation to recover oil, thermal desorption, bioremediation or land farming under controlled conditions, stabilisation and solidification, and incineration. Storage areas need lined, bunded containment to prevent leaks. Proper control reduces disposal volumes, recovers usable oil, and prevents soil and groundwater contamination at oil and gas facilities.",
         "desc_ar": "حمأة النفط خليط كثيف من الزيت والماء والمواد الصلبة يتراكم في قيعان خزانات التخزين وفواصل الزيت عن الماء ووحدات المصافي وعمليات الحفر، وكثيراً ما تُصنَّف نفايات خطرة. ويبدأ التحكم بتوصيف الحمأة من حيث محتوى الزيت والماء والمواد الصلبة والمعادن، ثم تقليل الكميات المنتجة منها. ومن خيارات المعالجة التنظيف الميكانيكي للخزانات، والفصل بالطرد المركزي لاستعادة الزيت، والامتزاز الحراري، والمعالجة الحيوية أو المعالجة الأرضية في ظروف مضبوطة، والتثبيت والتصليد، والحرق. وتحتاج مناطق التخزين إلى احتواء مبطّن ومحاط بسواتر لمنع التسرب. ويؤدي التحكم السليم إلى تقليل أحجام النفايات المراد التخلص منها، واستعادة الزيت القابل للاستخدام، ومنع تلوث التربة والمياه الجوفية في منشآت النفط والغاز.",
         "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons title/description: 'Oil sludge pit' (U.S. Fish and Wildlife Service). Shows the problem (an unlined sludge pit) rather than its control; flag for visual check. Not viewed visually and not downloaded: this agent has no shell/download tool.",
-        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Oil_sludge_pit.jpg",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Oil_sludge_pit.jpg",
-        "photo_author": "Luther C. Goldman, U.S. Fish and Wildlife Service",
-        "photo_licence": "Public domain (U.S. federal government work)",
-        "attribution": "Not required. Courtesy credit: Luther C. Goldman / U.S. Fish and Wildlife Service, public domain, via Wikimedia Commons."
+        "photo_note": "No photo. The listed candidate ('Oil sludge pit', USFWS) was viewed: it shows an unlined sludge pit with drums, i.e. the problem, not its control. No photo of sludge treatment or recovery was found. Not substituted.",
+        "photo_source_url": null,
+        "photo_author": null,
+        "photo_licence": null,
+        "attribution": null
       }
     ]
   }

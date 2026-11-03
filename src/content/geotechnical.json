@@ -120,7 +120,7 @@
         "photo_author": null,
         "photo_licence": null,
         "attribution": null,
-        "photo_note": "No photo. No Commons photo of an SPT hammer or trip-hammer assembly on a rig was found. 'SPT' searches returned unrelated Indonesian training photos, a NASA galaxy cluster and an SPT N-value graph. The split-spoon photo used above was not reused, to avoid duplication."
+        "photo_note": "No photo. Commons and Pexels searches found no photo of an SPT trip-hammer on a rig. A remote split-spoon photo (DOE Savannah River) shows only a crane boom, so it was rejected. The split-spoon photo used for the sampling item was not reused."
       },
       {
         "name": "Pressuremeter Testing",
@@ -146,7 +146,7 @@
         "photo_author": null,
         "photo_licence": null,
         "attribution": null,
-        "photo_note": "No photo. Commons searches for 'plate load test' and 'plate bearing test' returned only old PDF reports and an Apollo lunar penetrometer. No photo of a soil plate load test setup was found."
+        "photo_note": "No photo. Commons and Pexels searches for plate load / plate bearing tests returned only old reports, railway tie-plate tests and lunar equipment. No photo of a soil plate load test set-up exists under the allowed licences."
       },
       {
         "name": "Vane Shear Testing",
@@ -234,7 +234,7 @@
         "photo_author": null,
         "photo_licence": null,
         "attribution": null,
-        "photo_note": "No photo. Commons results were historical book scans and irrigation facility photos. No photo of a percolation or soakaway test pit was found."
+        "photo_note": "No photo. Commons and Pexels searches returned no photo of a percolation or soakaway test pit."
       },
       {
         "name": "Settlement Analysis",

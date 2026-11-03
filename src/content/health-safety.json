@@ -11,10 +11,8 @@
         "desc_en": "Creating a safe work environment means designing and organising a worksite so that hazards are controlled before people are exposed to them. On engineering and field projects this includes planning site layout and access routes, separating pedestrians from vehicles and plant, installing barriers and edge protection, providing adequate lighting, ventilation, shade and drinking water, and setting up welfare facilities. Work is controlled through permit-to-work systems, clear signage and housekeeping standards. Regular inspections check that conditions remain safe as the work progresses. A well-planned site reduces accidents, protects workers and the public, and helps projects run without stoppages.",
         "desc_ar": "توفير بيئة عمل آمنة يعني تصميم موقع العمل وتنظيمه بحيث تُضبط المخاطر قبل تعرّض الأفراد لها. وفي المشاريع الهندسية والميدانية يشمل ذلك تخطيط توزيع الموقع ومسارات الوصول، والفصل بين المشاة والمركبات والمعدات، وتركيب الحواجز ووسائل الحماية من السقوط عند الحواف، وتوفير الإضاءة والتهوية والظل ومياه الشرب الكافية، وإعداد مرافق الرعاية. ويُضبط العمل من خلال أنظمة تصاريح العمل واللافتات الواضحة ومعايير النظافة والترتيب. وتتحقق عمليات التفتيش الدورية من بقاء الظروف آمنة مع تقدم الأعمال. ويُسهم الموقع المخطط جيداً في تقليل الحوادث وحماية العمال والجمهور ومساعدة المشاريع على العمل دون توقف.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "A broad outcome rather than a single object or activity; any site photo would be a generic substitute. The one PPE/site candidate found (NIOSH) explicitly shows workers WITHOUT fall protection, so it is unsuitable.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -26,10 +24,8 @@
         "desc_en": "Risk assessment is the process of identifying hazards in a task or workplace, deciding who could be harmed and how, and evaluating how likely and how severe the harm could be. Teams commonly use job safety analyses, HAZID workshops and a likelihood-severity risk matrix to rank each hazard. Mitigation then applies the hierarchy of controls: eliminate the hazard, substitute a safer method, use engineering controls, apply administrative controls such as procedures and permits, and finally provide personal protective equipment. Residual risk is recorded and reviewed when conditions change. Assessments are prepared before fieldwork such as drilling, excavation, marine operations and work at height.",
         "desc_ar": "تقييم المخاطر عملية لتحديد الأخطار في مهمة ما أو مكان عمل، وتحديد من قد يتعرض للضرر وكيف، وتقدير احتمال الضرر ومدى شدته. وتستخدم الفرق عادةً تحليل سلامة العمل وورش تحديد المخاطر ومصفوفة الاحتمال والشدة لترتيب كل خطر. ثم يُطبَّق الحد من المخاطر وفق تسلسل الضوابط: إزالة الخطر، أو استبداله بطريقة أكثر أماناً، أو استخدام الضوابط الهندسية، أو تطبيق الضوابط الإدارية مثل الإجراءات والتصاريح، وأخيراً توفير معدات الوقاية الشخصية. ويُسجَّل الخطر المتبقي ويُراجَع عند تغيّر الظروف. وتُعَدّ التقييمات قبل الأعمال الميدانية مثل الحفر وأعمال الحفريات والعمليات البحرية والعمل على المرتفعات.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "Risk assessment is an analytical/paperwork process; no licensed photo shows it specifically. Generic substitutes rejected.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -41,10 +37,8 @@
         "desc_en": "Safety policy development is the drafting of the written commitments and rules that govern how an organisation manages health and safety. A policy statement, signed by senior management, sets out the commitment to prevent injury and ill health, comply with legal requirements and consult workers. It is supported by an organisation chart of safety responsibilities and by arrangements covering risk assessment, training, contractor control, incident reporting, emergency response and monitoring. The policy is written to suit the actual activities, such as fieldwork, drilling, laboratory work or marine operations, and is communicated to all staff. It forms the foundation of a formal occupational health and safety management system.",
         "desc_ar": "تطوير سياسات السلامة هو صياغة الالتزامات والقواعد المكتوبة التي تحكم طريقة إدارة المؤسسة للصحة والسلامة. ويحدد بيان السياسة، الموقّع من الإدارة العليا، الالتزام بمنع الإصابات والاعتلالات الصحية، والامتثال للمتطلبات القانونية، والتشاور مع العاملين. ويُدعَم ببيان تنظيمي لمسؤوليات السلامة وبترتيبات تغطي تقييم المخاطر والتدريب وضبط المقاولين والإبلاغ عن الحوادث والاستجابة للطوارئ والمراقبة. وتُكتب السياسة بما يناسب الأنشطة الفعلية، مثل العمل الميداني والحفر والأعمال المخبرية والعمليات البحرية، وتُبلَّغ لجميع الموظفين. وتشكّل الأساس لنظام رسمي لإدارة الصحة والسلامة المهنية.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "A policy is a document; no licensed photograph shows it. Generic substitutes rejected.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -56,10 +50,8 @@
         "desc_en": "Regular policy review keeps safety policies and procedures accurate and effective as work, laws and risks change. Reviews are usually held at fixed intervals, often yearly, and also after a serious incident, a change in legislation, a new type of project or new equipment. The review looks at incident and near-miss trends, audit and inspection findings, worker feedback and progress against safety objectives. Outdated procedures are revised, document versions are controlled, and changes are communicated to staff through briefings and training. This cycle of plan, do, check and act follows the continual-improvement approach used in recognised management system standards such as ISO 45001.",
         "desc_ar": "تحافظ المراجعة الدورية للسياسات على دقة سياسات السلامة وإجراءاتها وفعاليتها مع تغيّر الأعمال والقوانين والمخاطر. وتُجرى المراجعات عادةً على فترات محددة، غالباً سنوية، وكذلك بعد وقوع حادث خطير، أو تغيّر التشريعات، أو بدء نوع جديد من المشاريع، أو إدخال معدات جديدة. وتتناول المراجعة اتجاهات الحوادث والحوادث الوشيكة، ونتائج التدقيق والتفتيش، وملاحظات العاملين، والتقدم نحو أهداف السلامة. وتُعدَّل الإجراءات القديمة، وتُضبط إصدارات الوثائق، وتُبلَّغ التغييرات للموظفين من خلال الإحاطات والتدريب. وتتبع هذه الدورة القائمة على التخطيط والتنفيذ والتحقق والتصحيح نهج التحسين المستمر المعتمد في معايير أنظمة الإدارة المعترف بها مثل ISO 45001.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "Policy review is a management activity with no distinctive visual subject. Generic meeting photos rejected.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -71,10 +63,8 @@
         "desc_en": "Incident investigation establishes what happened, why it happened and what must change to prevent it happening again. After an injury, near miss, equipment failure or environmental release, the scene is made safe and preserved, and investigators collect evidence through photographs, measurements, witness interviews and document reviews. Root cause analysis methods such as the 5 Whys, fishbone diagrams or structured techniques like ICAM look beyond the immediate cause to underlying system failures. Findings are written up with corrective and preventive actions, owners and deadlines. Reportable incidents are notified to authorities as required by law, and lessons learned are shared across teams and projects.",
         "desc_ar": "يهدف التحقيق في الحوادث إلى معرفة ما حدث ولماذا حدث وما الذي يجب تغييره لمنع تكراره. فبعد وقوع إصابة أو حادث وشيك أو عطل في المعدات أو تسرب بيئي، يُؤمَّن موقع الحادث ويُحافَظ عليه، ويجمع المحققون الأدلة من خلال الصور والقياسات ومقابلات الشهود ومراجعة الوثائق. وتتجاوز أساليب تحليل الأسباب الجذرية، مثل طريقة الأسئلة الخمسة ومخطط عظم السمكة أو التقنيات المنظمة مثل ICAM، السبب المباشر لتصل إلى أوجه القصور الكامنة في النظام. وتُوثَّق النتائج مع الإجراءات التصحيحية والوقائية والمسؤولين عنها ومواعيدها النهائية. ويُبلَّغ عن الحوادث الواجب الإبلاغ عنها إلى السلطات وفق ما يقتضيه القانون، وتُعمَّم الدروس المستفادة على الفرق والمشاريع.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "No licensed photo of a workplace incident investigation in progress was found; accident-scene or police images would be misleading substitutes.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -134,14 +124,13 @@
         "slug": "field-supervision-programs",
         "desc_en": "Field supervision programmes put experienced, competent supervisors on site to plan, direct and check work as it happens. Supervisors hold pre-start briefings, confirm that permits, risk assessments and method statements are in place, check that equipment has been inspected and that the right people are on each task. During the shift they monitor conditions, correct unsafe acts, stop work when necessary, and manage changes such as weather or unexpected ground conditions. They also verify technical quality, for example correct sampling, logging or testing procedures. Daily reports record progress, observations and issues. Effective supervision is one of the strongest controls for preventing incidents in fieldwork.",
         "desc_ar": "تضع برامج الإشراف الحقلي مشرفين ذوي خبرة وكفاءة في الموقع لتخطيط الأعمال وتوجيهها ومتابعتها أثناء تنفيذها. ويعقد المشرفون إحاطات قبل بدء العمل، ويتأكدون من توافر التصاريح وتقييمات المخاطر وبيانات طرق التنفيذ، ويتحققون من فحص المعدات ومن وجود الأشخاص المناسبين في كل مهمة. وخلال الوردية يراقبون الظروف، ويصححون التصرفات غير الآمنة، ويوقفون العمل عند الضرورة، ويديرون التغيرات مثل الأحوال الجوية أو ظروف التربة غير المتوقعة. كما يتحققون من الجودة الفنية، مثل صحة إجراءات أخذ العينات أو التسجيل أو الاختبار. وتوثّق التقارير اليومية سير العمل والملاحظات والمشكلات. ويُعد الإشراف الفعّال من أقوى الضوابط لمنع الحوادث في العمل الميداني.",
-        "photo_file": null,
-        "photo_status": "no_honest_photo",
-        "photo_note": "Only candidate found was a wildfire crew briefing (U.S. Forest Service); judged a generic substitute for engineering field supervision.",
-        "photo_source_url": null,
-        "photo_download_url": null,
-        "photo_author": null,
-        "photo_licence": null,
-        "attribution": null
+        "photo_file": "field-supervision-programs.jpg",
+        "photo_source_url": "https://www.pexels.com/photo/8961028/",
+        "photo_author": "Mikael Blomkvist",
+        "photo_licence": "Pexels License",
+        "attribution": "Photo: Mikael Blomkvist, Pexels License, via Pexels",
+        "photo_width": 1200,
+        "photo_height": 800
       },
       {
         "name": "Substance Handling Protocols",
@@ -178,13 +167,11 @@
         "desc_en": "A safety induction is the briefing every new employee, contractor or visitor receives before starting work on a site or project. It explains the site layout, the main hazards and how they are controlled, site rules, required PPE, permit-to-work arrangements, how to report hazards and incidents, emergency alarms, evacuation routes and assembly points, and welfare facilities. For field projects, inductions also cover specific risks such as heat, traffic, excavations, marine work or hydrogen sulphide. A short check confirms understanding, and attendance is recorded. Inductions are repeated when site conditions change and supported by daily pre-task briefings and toolbox talks.",
         "desc_ar": "التعريف بالسلامة هو الإحاطة التي يتلقاها كل موظف جديد أو مقاول أو زائر قبل بدء العمل في الموقع أو المشروع. ويشرح توزيع الموقع، والمخاطر الرئيسية وطريقة ضبطها، وقواعد الموقع، ومعدات الوقاية الشخصية المطلوبة، وترتيبات تصاريح العمل، وطريقة الإبلاغ عن المخاطر والحوادث، وإنذارات الطوارئ، ومسارات الإخلاء ونقاط التجمع، ومرافق الرعاية. وفي المشاريع الميدانية يغطي التعريف أيضاً مخاطر محددة مثل الحرارة وحركة المرور والحفريات والأعمال البحرية وكبريتيد الهيدروجين. ويؤكد اختبار قصير الفهم، ويُسجَّل الحضور. ويُعاد التعريف عند تغيّر ظروف الموقع، وتدعمه الإحاطات اليومية قبل المهام والأحاديث التوعوية.",
         "photo_file": null,
-        "photo_status": "candidate_verified_by_metadata_not_downloaded",
-        "photo_note": "Commons description: a BLM geologist gives a safety briefing before a group starts digging (public geode-digging event, not a construction site). Closest honest match to a pre-work field safety briefing; flag for visual check and editorial approval. Not viewed visually and not downloaded: this agent has no shell/download tool.",
-        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Safety_briefing_before_digging_(53544262805).jpg",
-        "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Safety_briefing_before_digging_%2853544262805%29.jpg",
-        "photo_author": "BLMUtah (U.S. Bureau of Land Management)",
-        "photo_licence": "Public domain (U.S. federal government work)",
-        "attribution": "Not required. Courtesy credit: Bureau of Land Management Utah, public domain, via Wikimedia Commons."
+        "photo_note": "No photo. The listed candidate (BLM geode-digging briefing) was viewed and rejected: a public leisure event, not a worksite induction. Pexels candidates were rejected for visible contractor branding (VINCONS jackets, logoed helmets) or for showing an unexplained crowd.",
+        "photo_source_url": null,
+        "photo_author": null,
+        "photo_licence": null,
+        "attribution": null
       }
     ]
   },
@@ -242,10 +229,8 @@
         "desc_en": "Work-related illness prevention protects workers from health effects that develop over time, rather than sudden injuries. In engineering and field work, key risks include heat stress, noise-induced hearing loss, respiratory disease from dust and silica, chemical exposure, vibration, musculoskeletal strain and work-related stress. Prevention starts with identifying these health hazards and measuring exposure, for example with personal noise dosimeters and air sampling pumps, and comparing results with occupational exposure limits. Controls include dust suppression, ventilation, quieter equipment, work-rest cycles and shaded rest areas in hot weather, hydration, job rotation, and suitable respiratory and hearing protection, backed by training and health surveillance.",
         "desc_ar": "تحمي الوقاية من الأمراض المرتبطة بالعمل العاملين من الآثار الصحية التي تتطور بمرور الوقت، لا من الإصابات المفاجئة. وفي الأعمال الهندسية والميدانية تشمل المخاطر الرئيسية الإجهاد الحراري، وفقدان السمع الناجم عن الضوضاء، وأمراض الجهاز التنفسي الناتجة عن الغبار والسيليكا، والتعرض للمواد الكيميائية، والاهتزاز، والإجهاد العضلي الهيكلي، والضغط النفسي المرتبط بالعمل. وتبدأ الوقاية بتحديد هذه المخاطر الصحية وقياس مستوى التعرض، مثلاً بأجهزة قياس الجرعة الشخصية للضوضاء ومضخات أخذ عينات الهواء، ومقارنة النتائج بحدود التعرض المهني. وتشمل الضوابط إخماد الغبار، والتهوية، واستخدام معدات أقل ضجيجاً، ودورات العمل والراحة وتوفير أماكن راحة مظللة في الطقس الحار، والإرواء، وتدوير المهام، وتوفير وسائل حماية مناسبة للجهاز التنفسي والسمع، مدعومة بالتدريب والمراقبة الصحية.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "Candidate (779th Aerospace Medicine Squadron, public domain) rejected after reading its description: it shows a painter demonstrating painting technique, with exposure monitoring only incidental. No better licensed photo confirmed.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null
@@ -271,10 +256,8 @@
         "desc_en": "ISO 9001:2015 is the international standard for quality management systems. It requires an organisation to understand its context and customer requirements, plan its processes with a risk-based approach, control documents and records, manage suppliers, monitor and measure performance, and pursue continual improvement through internal audits, corrective actions and management review. In engineering services this means, for example, controlled field and laboratory procedures, calibrated equipment, checked and approved reports, and traceable data. ISO 9001 addresses quality rather than safety; occupational health and safety is covered by ISO 45001, and both share the same high-level structure so they can be run as an integrated management system.",
         "desc_ar": "معيار ISO 9001:2015 هو المعيار الدولي لأنظمة إدارة الجودة. ويُلزم المؤسسة بفهم سياقها ومتطلبات عملائها، وتخطيط عملياتها وفق نهج قائم على المخاطر، وضبط الوثائق والسجلات، وإدارة الموردين، ومراقبة الأداء وقياسه، والسعي إلى التحسين المستمر من خلال التدقيق الداخلي والإجراءات التصحيحية ومراجعة الإدارة. وفي الخدمات الهندسية يعني ذلك مثلاً إجراءات ميدانية ومخبرية مضبوطة، ومعدات معايرة، وتقارير مدققة ومعتمدة، وبيانات قابلة للتتبع. ويُعنى معيار ISO 9001 بالجودة لا بالسلامة؛ إذ يغطي معيار ISO 45001 الصحة والسلامة المهنية، ويشترك المعياران في الهيكل العام نفسه بما يتيح تشغيلهما كنظام إدارة متكامل.",
         "photo_file": null,
-        "photo_status": "no_honest_photo",
         "photo_note": "A management system standard has no photographable form; using a certificate image would imply a certification claim about ATLAS GES, which the brief prohibits. Also note for the site owner: ISO 9001 is a quality standard, not a health and safety standard, yet the page lists it under Health & Safety.",
         "photo_source_url": null,
-        "photo_download_url": null,
         "photo_author": null,
         "photo_licence": null,
         "attribution": null

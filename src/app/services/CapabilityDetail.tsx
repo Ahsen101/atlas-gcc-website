@@ -211,7 +211,10 @@ export default function CapabilityDetail({ service, card, siblings }: Props) {
               <span className="font-bold" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>ATLAS <span className="text-atlas-400">GES</span></span>
             </div>
             <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} {t('footer.copyright')}</p>
-            <a href="https://www.atlasges.com" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-atlas-400 transition-colors">www.atlasges.com</a>
+            <div className="flex items-center gap-4">
+              <a href="/credits/" className="text-xs text-gray-500 hover:text-atlas-400 transition-colors">{t('detail.credits')}</a>
+              <a href="https://www.atlasges.com" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-atlas-400 transition-colors">www.atlasges.com</a>
+            </div>
           </div>
         </div>
       </footer>
