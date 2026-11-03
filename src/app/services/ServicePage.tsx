@@ -2,7 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/lib/i18n';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { detailHref } from '@/content/card-links';
 
 interface ServicePageProps {
   title: string;
@@ -19,6 +22,7 @@ interface ServicePageProps {
 export default function ServicePage({ title, titleAr, subtitle, subtitleAr, heroImage, description, descriptionAr, capabilities, secondaryImages }: ServicePageProps) {
   const { t, lang } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
+  const serviceSlug = (usePathname() || '').split('/').filter(Boolean)[1] || '';
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -44,10 +48,11 @@ export default function ServicePage({ title, titleAr, subtitle, subtitleAr, hero
               <span className="text-xs text-atlas-400 ml-1 font-medium">GES</span>
             </div>
           </a>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="/#services" className="text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('shared.allServices')}</a>
-            <a href="/#projects" className="text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('nav.projects')}</a>
-            <a href="/#contact" className="rounded-full bg-atlas-600 px-5 py-2 text-sm font-semibold text-white hover:bg-atlas-500 transition-all hover:shadow-lg hover:shadow-atlas-500/20 hover:-translate-y-0.5">
+          <div className="flex items-center gap-3 md:gap-8">
+            <a href="/#services" className="hidden md:inline text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('shared.allServices')}</a>
+            <a href="/#projects" className="hidden md:inline text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('nav.projects')}</a>
+            <LanguageSwitcher />
+            <a href="/#contact" className="hidden md:inline-block rounded-full bg-atlas-600 px-5 py-2 text-sm font-semibold text-white hover:bg-atlas-500 transition-all hover:shadow-lg hover:shadow-atlas-500/20 hover:-translate-y-0.5">
               {t('nav.getInTouch')}
             </a>
           </div>
@@ -96,23 +101,50 @@ export default function ServicePage({ title, titleAr, subtitle, subtitleAr, hero
 
           {/* Capabilities */}
           <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {capabilities.map((cap, ci) => (
-              <div key={ci} className="rounded-2xl border border-white/5 bg-white/[0.02] p-8 hover:border-atlas-500/20 hover:bg-white/[0.04] transition-all duration-300">
-                <h3 className="text-lg font-bold text-atlas-400 mb-4" style={{ fontFamily: lang === 'ar' ? "'Noto Sans Arabic', sans-serif" : "'Space Grotesk', sans-serif" }}>
-                  {lang === 'ar' && cap.headingAr ? cap.headingAr : cap.heading}
-                </h3>
-                <ul className="space-y-2">
-                  {(lang === 'ar' && cap.itemsAr ? cap.itemsAr : cap.items).map((item, ii) => (
-                    <li key={ii} className="flex items-start gap-2 text-sm text-gray-400">
-                      <svg className="h-4 w-4 mt-0.5 shrink-0 text-atlas-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            {capabilities.map((cap, ci) => {
+              const heading = lang === 'ar' && cap.headingAr ? cap.headingAr : cap.heading;
+              const href = detailHref(serviceSlug, cap.heading);
+              const body = (
+                <>
+                  <h3 className="text-lg font-bold text-atlas-400 mb-4" style={{ fontFamily: lang === 'ar' ? "'Noto Sans Arabic', sans-serif" : "'Space Grotesk', sans-serif" }}>
+                    {heading}
+                  </h3>
+                  <ul className="space-y-2">
+                    {(lang === 'ar' && cap.itemsAr ? cap.itemsAr : cap.items).map((item, ii) => (
+                      <li key={ii} className="flex items-start gap-2 text-sm text-gray-400">
+                        <svg className="h-4 w-4 mt-0.5 shrink-0 text-atlas-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              );
+              if (!href) {
+                // No detail content yet: keep the original static card.
+                return (
+                  <div key={ci} className="rounded-2xl border border-white/5 bg-white/[0.02] p-8 hover:border-atlas-500/20 hover:bg-white/[0.04] transition-all duration-300">
+                    {body}
+                  </div>
+                );
+              }
+              return (
+                <a
+                  key={ci}
+                  href={href}
+                  aria-label={`${heading}, ${t('detail.viewDetails')}`}
+                  data-capability-card={cap.heading}
+                  className="group flex flex-col rounded-2xl border border-white/5 bg-white/[0.02] p-8 hover:border-atlas-500/20 hover:bg-white/[0.04] transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-atlas-400 focus-visible:ring-offset-2 focus-visible:ring-offset-atlas-950"
+                >
+                  {body}
+                  <span className="mt-auto pt-6 flex items-center gap-1 text-sm font-semibold text-atlas-400 group-hover:gap-2 transition-all" aria-hidden="true">
+                    {t('detail.learnMore')}
+                    <svg className="h-4 w-4 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                  </span>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>

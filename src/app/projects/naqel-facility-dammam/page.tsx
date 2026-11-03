@@ -14,7 +14,6 @@ export default function NaqelFacilityDammamPage() {
       clientAr="ناقل إكسبرس / مطار الملك فهد الدولي"
       location="Dammam, Saudi Arabia"
       locationAr="الدمام، المملكة العربية السعودية"
-      secondaryImages={["/images/about-drilling-team.jpeg"]}
       description={[
         "ATLAS GES was engaged to provide geotechnical investigation services for the extension of the Naqel logistics and cargo handling facility at King Fahad International Airport in Dammam.",
         "The project required careful investigation of ground conditions adjacent to existing operational structures, necessitating low-vibration drilling techniques and precise subsurface profiling to avoid disruption to ongoing airport logistics operations.",

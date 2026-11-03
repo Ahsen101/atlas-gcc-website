@@ -247,6 +247,46 @@ const translations: Record<string, Record<Lang, string>> = {
   'shared.status': { en: 'Status', ar: 'الحالة' },
   'shared.client': { en: 'Client', ar: 'العميل' },
   'shared.location': { en: 'Location', ar: 'الموقع' },
+
+  // Capability detail pages
+  'detail.viewDetails': { en: 'View details', ar: 'عرض التفاصيل' },
+  'detail.learnMore': { en: 'Learn more', ar: 'اعرف المزيد' },
+  'detail.services': { en: 'Services', ar: 'الخدمات' },
+  'detail.breadcrumb': { en: 'Breadcrumb', ar: 'مسار التنقل' },
+  'detail.inThisSection': { en: 'On this page', ar: 'في هذه الصفحة' },
+  'detail.otherCapabilities': { en: 'Other capabilities in this service', ar: 'قدرات أخرى ضمن هذه الخدمة' },
+  'detail.backToService': { en: 'Back to', ar: 'العودة إلى' },
+  'detail.ctaTitle': { en: 'Discuss your project with ATLAS GES', ar: 'ناقش مشروعك مع أطلس' },
+  'detail.ctaBody': {
+    en: 'Tell us about your site and requirements, and our team will get back to you.',
+    ar: 'أخبرنا عن موقعك ومتطلباتك، وسيتواصل معك فريقنا.',
+  },
+  'detail.arReviewNote': {
+    en: '',
+    ar: 'ملاحظة: النص العربي في هذه الصفحة قيد المراجعة من قبل مختص لغوي.',
+  },
+  'detail.photo': { en: 'Photo', ar: 'صورة' },
+  'detail.credits': { en: 'Photo credits', ar: 'حقوق الصور' },
+
+  // Contact form states
+  'contact.sending': { en: 'Sending...', ar: 'جارٍ الإرسال...' },
+  'contact.success': {
+    en: 'Thank you. Your inquiry has been received and our team will be in touch.',
+    ar: 'شكراً لك. تم استلام استفسارك وسيتواصل معك فريقنا.',
+  },
+  'contact.errorValidation': {
+    en: 'Please enter your name, a valid email address and your project details.',
+    ar: 'يرجى إدخال اسمك وبريد إلكتروني صحيح وتفاصيل مشروعك.',
+  },
+  'contact.errorRate': {
+    en: 'Too many submissions from your network. Please try again later or email info@atlasges.com.',
+    ar: 'عدد كبير من الطلبات من شبكتك. يرجى المحاولة لاحقاً أو مراسلتنا على info@atlasges.com.',
+  },
+  'contact.errorServer': {
+    en: 'Sorry, your inquiry could not be sent. Please email us at info@atlasges.com.',
+    ar: 'عذراً، تعذر إرسال استفسارك. يرجى مراسلتنا على info@atlasges.com.',
+  },
+  'contact.honeypot': { en: 'Leave this field empty', ar: 'اترك هذا الحقل فارغاً' },
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {

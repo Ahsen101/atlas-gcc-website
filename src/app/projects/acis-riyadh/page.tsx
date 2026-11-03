@@ -14,7 +14,7 @@ export default function AcisRiyadhPage() {
       clientAr="هيئة مطار الملك خالد الدولي"
       location="Riyadh, Saudi Arabia"
       locationAr="الرياض، المملكة العربية السعودية"
-      secondaryImages={["/images/service-geophysical-seismic.jpeg"]}
+      secondaryImages={["/images/service-seismic-field.jpeg"]}
       description={[
         "Building on our successful delivery at King Fahad International Airport, ATLAS GES was selected to perform the geotechnical investigation for the ACIS facility at King Khalid International Airport in Riyadh.",
         "The Riyadh site presented unique geological conditions requiring specialized investigation techniques, including deep borehole drilling through variable subsurface strata and comprehensive laboratory testing programs.",

@@ -2,7 +2,13 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { LanguageProvider } from '@/lib/i18n';
 
+// ATLAS_NOINDEX=1 is set only for the Cloudflare Pages build while the Vercel copy is still
+// live (NFR-5 parallel run), so the two copies do not compete in search. Unset = indexable.
+const noindex = process.env.ATLAS_NOINDEX === '1';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://atlas-ges.pages.dev'),
+  ...(noindex ? { robots: { index: false, follow: false } } : {}),
   title: 'Atlas GES (Global Expert Services) | Geotechnical, Geophysical & Environmental Services',
   description: 'Leading provider of integrated geotechnical, geophysical, topographical and environmental services across Saudi Arabia and Bahrain.',
 };
