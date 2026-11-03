@@ -14,7 +14,6 @@ export default function AcisDammamPage() {
       clientAr="هيئة مطار الملك فهد الدولي"
       location="Dammam, Saudi Arabia"
       locationAr="الدمام، المملكة العربية السعودية"
-      secondaryImages={["/images/service-geotechnical-lab.jpeg"]}
       description={[
         "ATLAS GES was commissioned to perform a full geotechnical and geophysical investigation for the Automatic Cargo Integrated Screening (ACIS) facility at King Fahad International Airport in Dammam.",
         "The project involved extensive subsurface exploration including borehole drilling, in-situ testing, and laboratory analysis to characterize foundation conditions for this critical airport security infrastructure.",

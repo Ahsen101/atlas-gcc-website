@@ -5,8 +5,8 @@ export default function GeotechnicalPage() {
     <ServicePage
       title="Geotechnical Services"
       titleAr="الخدمات الجيوتقنية"
-      subtitle="Comprehensive subsurface investigation and foundation engineering across Saudi Arabia and Bahrain"
-      subtitleAr="تحقيقات شاملة لما تحت السطح وهندسة الأساسات في المملكة العربية السعودية والبحرين"
+      subtitle="Comprehensive subsurface investigation and foundation engineering across Saudi Arabia"
+      subtitleAr="تحقيقات شاملة لما تحت السطح وهندسة الأساسات في المملكة العربية السعودية"
       heroImage="/images/service-geotechnical.jpeg"
       secondaryImages={["/images/about-cpt-rig.jpeg", "/images/about-excavator.jpeg"]}
       description={[

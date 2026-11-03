@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import Image from 'next/image';
 import { useLanguage } from '@/lib/i18n';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+import ThemeToggle from '@/components/ThemeToggle';
 
 // ============================================================
 // Scroll-reveal hook
@@ -76,24 +78,6 @@ function Counter({ end, suffix = '', labelKey }: { end: number; suffix?: string;
 }
 
 // ============================================================
-// Language Switcher
-// ============================================================
-function LanguageSwitcher({ className = '' }: { className?: string }) {
-  const { lang, setLang } = useLanguage();
-  return (
-    <button
-      onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
-      className={`flex items-center gap-1.5 rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold hover:border-atlas-500/30 hover:bg-white/5 transition-all ${className}`}
-    >
-      <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
-      </svg>
-      {lang === 'en' ? 'العربية' : 'English'}
-    </button>
-  );
-}
-
-// ============================================================
 // Navbar
 // ============================================================
 function Navbar() {
@@ -138,6 +122,7 @@ function Navbar() {
             </a>
           ))}
           <LanguageSwitcher />
+          <ThemeToggle />
           <a href="#contact" className="rounded-full bg-atlas-600 px-5 py-2 text-sm font-semibold text-white hover:bg-atlas-500 transition-all hover:shadow-lg hover:shadow-atlas-500/20 hover:-translate-y-0.5">
             {t('nav.getInTouch')}
           </a>
@@ -146,6 +131,7 @@ function Navbar() {
         {/* Mobile toggle */}
         <div className="flex md:hidden items-center gap-3">
           <LanguageSwitcher />
+          <ThemeToggle />
           <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 text-gray-300">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               {menuOpen ? <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -226,6 +212,90 @@ function ProjectCard({ nameKey, idx, image, slug }: { nameKey: string; idx: numb
         <svg className="h-4 w-4 text-gray-600 group-hover:text-atlas-400 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
       </div>
     </a>
+  );
+}
+
+// ============================================================
+// Contact form: POSTs to the /api/contact Pages Function (stored in D1)
+// ============================================================
+type FormStatus = 'idle' | 'sending' | 'success' | 'validation' | 'rate' | 'server';
+
+function ContactForm() {
+  const { t, lang } = useLanguage();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [website, setWebsite] = useState('');
+  const [status, setStatus] = useState<FormStatus>('idle');
+
+  const inputClass = 'w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-atlas-500 focus:outline-none focus:ring-1 focus:ring-atlas-500 transition-colors';
+
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (status === 'sending') return;
+    const emailOk = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email.trim());
+    if (!name.trim() || !emailOk || !message.trim()) {
+      setStatus('validation');
+      return;
+    }
+    setStatus('sending');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ name, email, message, website, lang, page: window.location.pathname }),
+      });
+      const body = await res.json().catch(() => null);
+      if (res.ok && body && body.ok) {
+        setStatus('success');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else if (res.status === 400) {
+        setStatus('validation');
+      } else if (res.status === 429) {
+        setStatus('rate');
+      } else {
+        setStatus('server');
+      }
+    } catch {
+      setStatus('server');
+    }
+  };
+
+  const messageKey: Record<Exclude<FormStatus, 'idle' | 'sending'>, string> = {
+    success: 'contact.success',
+    validation: 'contact.errorValidation',
+    rate: 'contact.errorRate',
+    server: 'contact.errorServer',
+  };
+
+  return (
+    <form className="space-y-5" onSubmit={onSubmit} noValidate data-contact-form>
+      <div>
+        <label htmlFor="contact-name" className="block text-sm font-medium mb-2">{t('contact.name')}</label>
+        <input id="contact-name" name="name" type="text" required maxLength={120} autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} className={inputClass} placeholder={t('contact.namePlaceholder')} />
+      </div>
+      <div>
+        <label htmlFor="contact-email" className="block text-sm font-medium mb-2">{t('contact.email')}</label>
+        <input id="contact-email" name="email" type="email" required maxLength={254} autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass} placeholder={t('contact.emailPlaceholder')} dir="ltr" />
+      </div>
+      <div>
+        <label htmlFor="contact-message" className="block text-sm font-medium mb-2">{t('contact.projectDetails')}</label>
+        <textarea id="contact-message" name="message" rows={4} required maxLength={5000} value={message} onChange={(e) => setMessage(e.target.value)} className={`${inputClass} resize-none`} placeholder={t('contact.projectPlaceholder')} />
+      </div>
+      {/* Honeypot: hidden from people and assistive tech; bots that fill it are dropped server-side. */}
+      <div aria-hidden="true" style={{ position: 'absolute', width: '1px', height: '1px', margin: '-1px', padding: 0, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
+        <label htmlFor="contact-website">{t('contact.honeypot')}</label>
+        <input id="contact-website" name="website" type="text" tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
+      </div>
+      <button type="submit" disabled={status === 'sending'} aria-busy={status === 'sending'} className="w-full rounded-xl bg-atlas-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-atlas-600/25 hover:bg-atlas-500 hover:shadow-xl hover:shadow-atlas-500/30 transition-all hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0">
+        {status === 'sending' ? t('contact.sending') : t('contact.sendInquiry')}
+      </button>
+      <p aria-live="polite" role="status" data-contact-status={status} className={`text-sm min-h-[1.25rem] ${status === 'success' ? 'text-emerald-400' : 'text-red-400'}`}>
+        {status !== 'idle' && status !== 'sending' ? t(messageKey[status]) : ''}
+      </p>
+    </form>
   );
 }
 
@@ -320,11 +390,10 @@ export default function Home() {
 
       {/* ======== STATS BAR ======== */}
       <section className="relative border-y border-white/5 bg-atlas-950">
-        <div className="mx-auto max-w-6xl px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mx-auto max-w-6xl px-6 py-16 grid grid-cols-1 sm:grid-cols-3 gap-8">
           <Counter end={200} suffix="m" labelKey="stats.maxDrillDepth" />
           <Counter end={50} suffix="+" labelKey="stats.projectsCompleted" />
           <Counter end={15} suffix="+" labelKey="stats.yearsExperience" />
-          <Counter end={2} suffix="" labelKey="stats.countries" />
         </div>
       </section>
 
@@ -349,10 +418,6 @@ export default function Home() {
                 <div className="rounded-xl border border-white/5 bg-white/[0.02] p-4 flex-1">
                   <div className="text-2xl font-bold text-atlas-400" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>KSA</div>
                   <div className="text-xs text-gray-500 mt-1">{t('about.headquarters')}</div>
-                </div>
-                <div className="rounded-xl border border-white/5 bg-white/[0.02] p-4 flex-1">
-                  <div className="text-2xl font-bold text-atlas-400" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>BHR</div>
-                  <div className="text-xs text-gray-500 mt-1">{t('about.operations')}</div>
                 </div>
                 <div className="rounded-xl border border-white/5 bg-white/[0.02] p-4 flex-1">
                   <div className="text-2xl font-bold text-atlas-400" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>ISO</div>
@@ -545,11 +610,10 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-3 stagger">
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 max-w-4xl mx-auto stagger">
             {[
               { titleKey: 'cert.iso.title', descKey: 'cert.iso.desc', image: '/images/cert-iso.png' },
               { titleKey: 'cert.cr.title', descKey: 'cert.cr.desc', image: '/images/cert-1.jpeg' },
-              { titleKey: 'cert.sce.title', descKey: 'cert.sce.desc', image: '/images/cert-2.jpeg' },
             ].map((cert) => (
               <div key={cert.titleKey} className="reveal-scale rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden hover:border-atlas-500/20 hover:bg-white/[0.04] transition-all duration-500 group">
                 <div className="relative h-48 overflow-hidden bg-white/5 flex items-center justify-center p-4">
@@ -630,23 +694,7 @@ export default function Home() {
 
               {/* Contact form */}
               <div className="rounded-2xl border border-white/5 bg-white/[0.02] p-8">
-                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">{t('contact.name')}</label>
-                    <input type="text" className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-atlas-500 focus:outline-none focus:ring-1 focus:ring-atlas-500 transition-colors" placeholder={t('contact.namePlaceholder')} />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">{t('contact.email')}</label>
-                    <input type="email" className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-atlas-500 focus:outline-none focus:ring-1 focus:ring-atlas-500 transition-colors" placeholder={t('contact.emailPlaceholder')} dir="ltr" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">{t('contact.projectDetails')}</label>
-                    <textarea rows={4} className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-atlas-500 focus:outline-none focus:ring-1 focus:ring-atlas-500 transition-colors resize-none" placeholder={t('contact.projectPlaceholder')} />
-                  </div>
-                  <button type="submit" className="w-full rounded-xl bg-atlas-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-atlas-600/25 hover:bg-atlas-500 hover:shadow-xl hover:shadow-atlas-500/30 transition-all hover:-translate-y-0.5">
-                    {t('contact.sendInquiry')}
-                  </button>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>

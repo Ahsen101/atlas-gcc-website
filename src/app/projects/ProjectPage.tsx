@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useLanguage } from '@/lib/i18n';
+import ThemeToggle from '@/components/ThemeToggle';
 
 interface ProjectPageProps {
   title: string;
@@ -53,12 +54,15 @@ export default function ProjectPage({ title, titleAr, subtitle, subtitleAr, hero
               <span className="text-xs text-atlas-400 ml-1 font-medium">GES</span>
             </div>
           </a>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="/#services" className="text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('nav.services')}</a>
-            <a href="/#projects" className="text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('shared.backToProjects').replace(/العودة لل|Back to /, '')}</a>
-            <a href="/#contact" className="rounded-full bg-atlas-600 px-5 py-2 text-sm font-semibold text-white hover:bg-atlas-500 transition-all hover:shadow-lg hover:shadow-atlas-500/20 hover:-translate-y-0.5">
-              {t('nav.getInTouch')}
-            </a>
+          <div className="flex items-center gap-3 md:gap-8">
+            <div className="hidden md:flex items-center gap-8">
+              <a href="/#services" className="text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('nav.services')}</a>
+              <a href="/#projects" className="text-sm text-gray-300 hover:text-atlas-400 transition-colors">{t('shared.backToProjects').replace(/العودة لل|Back to /, '')}</a>
+              <a href="/#contact" className="rounded-full bg-atlas-600 px-5 py-2 text-sm font-semibold text-white hover:bg-atlas-500 transition-all hover:shadow-lg hover:shadow-atlas-500/20 hover:-translate-y-0.5">
+                {t('nav.getInTouch')}
+              </a>
+            </div>
+            <ThemeToggle />
           </div>
         </div>
       </nav>

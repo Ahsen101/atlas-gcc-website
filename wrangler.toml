@@ -1,0 +1,13 @@
+# Cloudflare Pages config for the ATLAS GES site on Atlas CF (ATLAS GES's own account 034279ad21e7f109f9c4469f5bee422b).
+# Static export in out/ + Pages Functions in functions/. Deploy with:
+#   NEXT_PUBLIC_SITE_URL=https://atlasges.com npm run build && npx wrangler pages deploy out --project-name atlas-ges --branch <branch>
+# No secrets in this file. IP_HASH_SALT is a Pages secret.
+name = "atlas-ges"
+pages_build_output_dir = "out"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "atlas-ges-db"
+database_id = "d95c4bf8-a1b2-47cf-9f06-132ce9a314a3"
+migrations_dir = "migrations"
